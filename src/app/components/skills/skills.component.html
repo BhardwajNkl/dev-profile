@@ -1,0 +1,18 @@
+<div id="skill-filter-container">
+    <span class="ms-5 skill-filter" *ngFor="let skillFilter of skillFilters">
+    {{skillFilter.filter}}
+    </span>
+</div>
+<div id="skills" class="mt-2">
+    <div class="card skill" *ngFor="let skill of skills">
+        <div class="card-body">
+            <h5 class="card-title">{{skill.title}}</h5>
+            <p class="card-text">
+                <!-- show first 150 characters only and give a see more link -->
+                {{skill.description.substring(0,150)}} <a href="#" *ngIf="skill.description.length>150" >see more</a>
+            </p>
+            Level: <i>{{skill.expertise}}</i><br>
+            <!-- Related projects: <i>{{skill.associatedProjects}}</i><br> -->
+        </div>
+    </div>
+</div>

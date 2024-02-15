@@ -1,0 +1,26 @@
+<!-- <div id="project-filter">
+    <span class="ms-5"> Java/Spring <input type="checkbox" name="java" id="java"></span>
+    <span class="ms-5"> Node/Express <input type="checkbox" name="node" id="node"></span>
+    <span class="ms-5"> Python <input type="checkbox" name="python" id="python"></span>
+    <span class="ms-5"> Angular <input type="checkbox" name="angular" id="angular"></span>
+    <span class="ms-5"> React <input type="checkbox" name="react" id="react"></span>
+</div> -->
+
+<div id="projects">
+    <div class="card project" *ngFor="let project of projects">
+        <!-- <img src="" class="card-img-top" alt="skill-image"> -->
+        <div class="card-body">
+            <h5 class="card-title">{{project.title}}</h5>
+            <p class="card-text">
+                <!-- show first 150 characters only and give a see more link -->
+                {{project.description.substring(0,220)}} <a href="#" *ngIf="project.description.length>220" >see more</a>
+            </p>
+            <p>
+                Tech stack: <i>{{project.techStack}}</i><br>
+                Git repository: <i>{{project.gitRepo}}</i><br>
+                Live here:<i> {{project.liveUrl}}</i>
+            </p>
+            <!-- <a href="#" class="btn btn-sm btn-primary bg-white text-black">See In Detail</a> -->
+        </div>
+    </div>
+</div>
