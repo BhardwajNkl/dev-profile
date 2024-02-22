@@ -1,1 +1,17 @@
-vigorous-chess.surge.sh
+v1: vigorous-chess.surge.sh
+v2: enchanting-bulb.surge.sh
+============================
+ navbar: the app is currently having two main pages:
+    1. default route: displays person's profile.
+    2. daily-bites: displays the notes of the person.
+
+We want to provide in page navigation for profile sections such as about, skill, contact, etc.
+And currently all these in page navigation links are also part of main nav-bar.
+We can think the following way:
+1. let it remain like this.
+2. nav-bar should provide main page level links only: 1. home/profile and 2. daily-bites.
+    And then for each page, we can consider providing an in page navigation bar.
+
+======================== app layout ====================
+>> Two pages profile and daily-bites are represented by profile component and daily-bite-page component respectively.
+>> These components are put inside router-outlet inside app component.

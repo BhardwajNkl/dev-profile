@@ -12,8 +12,5 @@ export class SkillsComponent {
   constructor(){
 
   }
-
-  ngOnInit(){
-    
-  }
+  
 }

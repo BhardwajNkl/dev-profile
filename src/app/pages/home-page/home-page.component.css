@@ -4,20 +4,22 @@ All the content that is displayed on this page, is basically put in the middle c
 This middle column has a class of 'main-content'.
 */
 
-.container-fluid{
+/* below property moved to app-component-css */
+/* .container-fluid{
     background-color:rgb(15 23 42);
     color: white;
-}
+} */
 
 /* .main-content{
 
 } */
 
-.section-title{
+/* below property moved to profle-component-css */
+/* .section-title{
     font-family: 'Times New Roman', Times, serif;
     color:rgb(226 232 240);
 }
 
 hr{
     color: aqua;
-}
+} */

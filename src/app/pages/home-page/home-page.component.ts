@@ -10,19 +10,4 @@ import { SkillFilter } from 'src/app/services/skill-filter';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent {
-  user!: User;
-  skills!:Skill[]
-  projects!:Project[]
-  skillFilters!:SkillFilter[]
-
-  constructor(private dummyDataService: DummyDataService){
-
-  }
-
-  ngOnInit(){
-    this.user = this.dummyDataService.getUser();
-    this.skills = this.dummyDataService.getSkills();
-    this.projects = this.dummyDataService.getProjects();
-    this.skillFilters = this.dummyDataService.getSkillFilters();
-  }
 }
