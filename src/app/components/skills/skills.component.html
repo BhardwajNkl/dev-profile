@@ -7,11 +7,19 @@
     <div class="card skill" *ngFor="let skill of skills">
         <div class="card-body">
             <h5 class="card-title">{{skill.title}}</h5>
-            <p class="card-text">
-                <!-- show first 150 characters only and give a see more link -->
-                {{skill.description.substring(0,150)}} <a href="#" *ngIf="skill.description.length>150" >see more</a>
-            </p>
             Level: <i>{{skill.expertise}}</i><br>
+            <span class="card-text">
+                <!-- show first 150 characters only and give a see more link -->
+                <!-- {{skill.description.substring(0,150)}} <a href="#" *ngIf="skill.description.length>150" >see more</a> -->
+                <!-- <ul>
+                    <li *ngFor="let sentence of skill.description | splitByFullStop; let i ">{{ sentence }}</li>
+                </ul> -->
+                <ul>
+                    <ng-container *ngFor="let sentence of skill.description | splitByFullStop; let i = index">
+                      <li *ngIf="i < 2">{{ sentence }}</li>
+                    </ng-container>
+                </ul>
+            </span>
             <!-- Related projects: <i>{{skill.associatedProjects}}</i><br> -->
         </div>
     </div>

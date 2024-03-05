@@ -14,7 +14,8 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { AddBiteComponent } from './components/add-bite/add-bite.component'
+import { AddBiteComponent } from './components/add-bite/add-bite.component';
+import { SplitByFullStopPipe } from './pipes/split-by-full-stop.pipe'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AddBiteComponent } from './components/add-bite/add-bite.component'
     ProjectsComponent,
     ContactComponent,
     ProfileComponent,
-    AddBiteComponent
+    AddBiteComponent,
+    SplitByFullStopPipe
   ],
   imports: [
     BrowserModule,

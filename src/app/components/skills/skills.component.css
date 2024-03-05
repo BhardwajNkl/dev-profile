@@ -19,7 +19,7 @@
 #skills{
     /* creates a grid layout where the columns will adjust automatically based on the available space, with each column being at least 250 pixels wide and expanding evenly to fill any additional space beyond that */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     padding: 5pt;
 }
@@ -30,6 +30,10 @@
 
     border: 1px solid;
     border-color: rgb(148 163 184)
+}
+
+.skill ul{
+    padding-left: 5pt;
 }
 
 .skill:hover{
