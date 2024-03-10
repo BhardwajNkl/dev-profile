@@ -1,6 +1,9 @@
 #skill-filter-container{
     display: flex;
+    gap: 10pt;
     flex-wrap: wrap;
+
+    padding-left: 10pt;
 }
 
 .skill-filter:hover{
@@ -9,12 +12,14 @@
 }
 
 /* the below class is for showing which filter is active */
-/* .active-skill-filter{
-    padding-left: 2pt;
-    padding-right: 2pt;
+.active{
+    /* padding-left: 2pt; */
+    /* padding-right: 2pt; */
     border-bottom: 1pt solid;
     border-color: aqua;
-} */
+    color: aqua;
+    cursor: pointer;
+}
 
 #skills{
     /* creates a grid layout where the columns will adjust automatically based on the available space, with each column being at least 250 pixels wide and expanding evenly to fill any additional space beyond that */

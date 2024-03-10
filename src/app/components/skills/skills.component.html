@@ -1,10 +1,11 @@
 <div id="skill-filter-container">
-    <span class="ms-5 skill-filter" *ngFor="let skillFilter of skillFilters">
+    <!-- <span class="skill-filter" *ngFor="let skillFilter of skillFilters" (click)="filterSkills(skillFilter.filter)" > -->
+    <span [class.skill-filter]="activeFilter!=skillFilter.filter" [class.active]="activeFilter==skillFilter.filter" *ngFor="let skillFilter of skillFilters" (click)="filterSkills(skillFilter.filter)" >
     {{skillFilter.filter}}
     </span>
 </div>
 <div id="skills" class="mt-2">
-    <div class="card skill" *ngFor="let skill of skills">
+    <div class="card skill" *ngFor="let skill of skillToDisplay">
         <div class="card-body">
             <h5 class="card-title">{{skill.title}}</h5>
             Level: <i>{{skill.expertise}}</i><br>

@@ -16,7 +16,8 @@ export class DummyDataService {
       "name":"Nikhil Bhardwaj",
       "profession":"Fullstack Developer",
       "tagline":"I think & I code. Then I keep looking at the code until it becomes perfect.",
-      "introduction":"A passionate and detail oriented software developer with a Master's degree in computer application and a comprehensive training in Java full stack development. Proven ability to write clean code and implement design patterns effectively.",
+      "introductionP1":"A perfection-oriented Java developer with a Master's degree in computer application and a comprehensive training in full stack development. Proven ability to write clean code and implement design patterns effectively.",
+      "introductionP2":"The purpose of creating this website is to let employers know about my skills and capabilities as a web developer. I also document my thoughts & learning notes here.",
       "mobile":"8888888888",
       "city":"Noida"
     }
@@ -51,14 +52,14 @@ export class DummyDataService {
         title:"React",
         expertise:"Basic",
         description:"Hands on learning experience. Familiar with components, routing, props, hooks, context API, Redux and Middleware.",
-        category:["framework"],
+        category:["programming","framework"],
         associatedProjects:["project1"]
       },
       {
         title:"Angular",
         expertise:"Basic",
         description:"Good understanding and practice of Angualr components, data binding, directives, pipes, services, routing, auth guards, lifecycle methods, forms & form validation, and HTTP.",
-        category:["framework"],
+        category:["programming","framework"],
         associatedProjects:["project1"]
       },
       {
@@ -72,7 +73,7 @@ export class DummyDataService {
         title:"Spring Boot",
         expertise:"Intermediate",
         description:"Have the ability to build scalable and secure web applications. Hands on learning experience covering Spring Core, Spring Data, Spring MVC, Spring Boot and Spring Security.",
-        category:["framework"],
+        category:["programming","framework"],
         associatedProjects:["project1"]
       },
       {
@@ -100,70 +101,70 @@ export class DummyDataService {
         title:"Node And Express",
         expertise:"Intermediate",
         description:"Done a couple of learning projects. Familiar with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
-        category:["framework"],
+        category:["programming","framework"],
         associatedProjects:["project1"]
       },
       {
         title:"MySQL",
         expertise:"Experienced",
         description:"Strong SQL and database design skills. Familiar with views, triggers, stored procedures, indexing, transactions and user management.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Elastisearch",
         expertise:"Basic",
         description:"Hands on learning experience. Can integrate with Spring applications and utilize as per need.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Kafka",
         expertise:"Basic",
         description:"Hands on learning experience. Can integrate with Spring applications and utilize efficiently.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Redis",
         expertise:"Basic",
         description:"Hands on learning experience. Can integrate with Spring applications and utilize efficiently.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Git",
         expertise:"Experienced",
         description:"Familiar with repository initialization, remote repository setup, staging, commit, branching, push, pull, merge, merge conflict handling and collaboration.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Jenkins",
         expertise:"Basic",
         description:"Familiar with setup, job creation, build scheduling, scripting, git repository connection, etc.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"AWS",
         expertise:"Basic",
         description:"Familiar with EC2, S3 RDS and Lambda. Security groups, VPC, subnets and NACLs",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Docker and Kubernates",
         expertise:"Basic",
         description:"Getting an image, running, create own image and publishing to docker hub. Docker network, docker compose.",
-        category:["tool"],
+        category:["other"],
         associatedProjects:["project1"]
       },
       {
         title:"Camunda",
         expertise:"Basic",
         description:"Familiar with BPMN elements such as tasks, error events, message events, timer events, gateways, sub processes, etc. Familiar with Camunda Engine REST APIs and Camunda & Spring Boot integration.",
-        category:["tool"],
+        category:["programming","other"],
         associatedProjects:["project1"]
       }
 
@@ -180,10 +181,10 @@ export class DummyDataService {
         filter:"Framework"
       },
       {
-        filter:"Tool"
+        filter:"Other"
       },
       {
-        filter:"Other"
+        filter:"All"
       }
     ]
     return skillFilters;
