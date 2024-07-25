@@ -17,7 +17,8 @@ export class SkillsComponent {
   }
 
   ngOnInit(){
-    this.skillToDisplay = this.skills;
+    // this.skillToDisplay = this.skills;
+    this.filterSkills("Programming")
   }
 
   filterSkills(filter:string){

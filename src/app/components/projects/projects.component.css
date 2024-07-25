@@ -18,3 +18,12 @@
     color: white;
     border-color: aqua;
 }
+
+.project-link{
+    text-decoration: none;
+    color:rgb(226 232 240);
+}
+
+.project-link:hover{
+    color:blue;
+}

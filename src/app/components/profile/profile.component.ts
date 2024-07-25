@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DummyDataService } from 'src/app/services/dummy-data.service';
 import { Project } from 'src/app/services/project';
 import { Skill } from 'src/app/services/skill';
@@ -16,7 +17,7 @@ export class ProfileComponent {
   projects!:Project[]
   skillFilters!:SkillFilter[]
 
-  constructor(private dummyDataService: DummyDataService){
+  constructor(private dummyDataService: DummyDataService, private route:ActivatedRoute){
 
   }
 
@@ -25,5 +26,14 @@ export class ProfileComponent {
     this.skills = this.dummyDataService.getSkills();
     this.projects = this.dummyDataService.getProjects();
     this.skillFilters = this.dummyDataService.getSkillFilters();
+  }
+
+  ngAfterViewInit(){
+    // get fragment and scroll to the desired section
+    this.route.fragment.subscribe((fragment:string|null)=>{
+      if(fragment){
+        document.getElementById(fragment)?.scrollIntoView({behavior:"smooth"})
+      }
+    });
   }
 }

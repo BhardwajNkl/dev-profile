@@ -13,12 +13,12 @@
             <h5 class="card-title">{{project.title}}</h5>
             <p class="card-text">
                 <!-- show first 150 characters only and give a see more link -->
-                {{project.description.substring(0,220)}} <a href="#" *ngIf="project.description.length>220" >see more</a>
+                {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span>
             </p>
             <p>
                 Tech stack: <i>{{project.techStack}}</i><br>
-                Git repository: <i>{{project.gitRepo}}</i><br>
-                Live here:<i> {{project.liveUrl}}</i>
+                Git repository: <i><a [href]="project.gitRepo" class="project-link">{{project.gitRepo}}</a></i><br>
+                Live here:<i><a [href]="project.liveUrl" class="project-link">{{project.liveUrl}}</a></i>
             </p>
             <!-- <a href="#" class="btn btn-sm btn-primary bg-white text-black">See In Detail</a> -->
         </div>

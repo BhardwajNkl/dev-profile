@@ -16,4 +16,8 @@ export class ContactComponent {
   ngOnInit(){
     
   }
+
+  sendMessage(){
+    alert("This feature is not enabled yet! Please connect on LinkedIn.")
+  }
 }

@@ -1,8 +1,7 @@
 export interface User {
     name:string,
     tagline:string,
-    introductionP1:string,
-    introductionP2:string,
+    introduction:string[],
     profession: string,
     mobile:string,
     city:string

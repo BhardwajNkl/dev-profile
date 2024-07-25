@@ -11,8 +11,7 @@
     </div>
     <div id="about-col-2">
         <div class="introduction mt-3">
-            <p>{{user.introductionP1}}</p>
-            <p>{{user.introductionP2}}</p>
+            <p *ngFor="let introductionParagraph of user.introduction">{{introductionParagraph}}</p>
         </div>
     </div>
 

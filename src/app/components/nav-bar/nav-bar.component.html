@@ -1,9 +1,7 @@
 <div id="nav-bar">
     <a class="nav-link" [class.active]="activeLink=='about'" routerLink="" (click)="updateActiveLink('about')">about</a>
-    <a class="nav-link" [class.active]="activeLink=='skills'" href="#skills-container" (click)="updateActiveLink('skills')">skills</a>
-    <a class="nav-link" [class.active]="activeLink=='projects'" href="#projects-container" (click)="updateActiveLink('projects')">projects</a>
-    <a class="nav-link" [class.active]="activeLink=='contact'" href="#contact-container" (click)="updateActiveLink('contact')">contact</a>
+    <a class="nav-link" [class.active]="activeLink=='skills'" routerLink="" fragment="skills-section" (click)="updateActiveLink('skills')">skills</a>
+    <a class="nav-link" [class.active]="activeLink=='projects'" routerLink="" fragment="projects-section" (click)="updateActiveLink('projects')">projects</a>
+    <a class="nav-link" [class.active]="activeLink=='contact'" routerLink="" fragment="contact-section" (click)="updateActiveLink('contact')">contact</a>
     <a class="nav-link" [class.active]="activeLink=='daily-bites'" routerLink="/daily-bites" (click)="updateActiveLink('daily-bites')">Daily-Bites</a>
 </div>
-
-<!-- think about href; it is causing page reload. -->
