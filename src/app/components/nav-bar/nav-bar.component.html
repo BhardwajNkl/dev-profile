@@ -1,7 +1,6 @@
 <div id="nav-bar">
-    <a class="nav-link" [class.active]="activeLink=='about'" routerLink="" (click)="updateActiveLink('about')">about</a>
-    <a class="nav-link" [class.active]="activeLink=='skills'" routerLink="" fragment="skills-section" (click)="updateActiveLink('skills')">skills</a>
-    <a class="nav-link" [class.active]="activeLink=='projects'" routerLink="" fragment="projects-section" (click)="updateActiveLink('projects')">projects</a>
-    <a class="nav-link" [class.active]="activeLink=='contact'" routerLink="" fragment="contact-section" (click)="updateActiveLink('contact')">contact</a>
-    <a class="nav-link" [class.active]="activeLink=='daily-bites'" routerLink="/daily-bites" (click)="updateActiveLink('daily-bites')">Daily-Bites</a>
+    <a class="nav-link" routerLink="about">about</a>
+    <a class="nav-link" routerLink="skills">skills</a>
+    <a class="nav-link" routerLink="projects">projects</a>
+    <a class="nav-link" routerLink="contact">contact</a>
 </div>

@@ -1,23 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { DailyBitesPageComponent } from './pages/daily-bites-page/daily-bites-page.component';
-import { AdminPageComponent } from './pages/admin-page/admin-page.component';
-import { ProfileComponent } from './components/profile/profile.component';
+import { AboutComponent } from './components/about/about.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   {
     path:"",
-    component:ProfileComponent
+    pathMatch:'full',
+    redirectTo:"about"
   },
   {
-    path:"daily-bites",
-    component:DailyBitesPageComponent
+    path:"about",
+    component:AboutComponent
   },
   {
-    path:"admin",
-    component:AdminPageComponent
+    path:"skills",
+    component:SkillsComponent
+  },
+  {
+    path:"projects",
+    component:ProjectsComponent
+  },
+  {
+    path:"contact",
+    component:ContactComponent
   }
+
 ];
 
 @NgModule({

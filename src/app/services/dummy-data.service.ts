@@ -3,7 +3,6 @@ import { User } from './user';
 import { Skill } from './skill';
 import { Project } from './project';
 import { SkillFilter } from './skill-filter';
-import { Bite } from './bite';
 @Injectable({
   providedIn: 'root'
 })
@@ -262,48 +261,6 @@ export class DummyDataService {
       }
     ]
     return projects;
-  }
-
-
-  getBites():Bite[]{
-    const bites = [
-      {
-        title:"JPA pagination",
-        biteText:"some random text some random text some random text some random text some random text some random text",
-        keywords:["pagination","spring data", "jpa"],
-        category:"learning",
-        timestamp:"2024-02-17 06.30.22",        
-      },
-      {
-        title:"Camunda Message events",
-        biteText:"camunda random text camunda random text camunda random text camunda random text",
-        keywords:["camunda","bpmn", "message events"],
-        category:"learning",
-        timestamp:"2024-02-17 08.10.56",        
-      },
-      {
-        title:"json deserialization not working perfectly",
-        biteText:"java random text java random text",
-        keywords:["json","deserialization"],
-        category:"error",
-        timestamp:"2024-02-17 06.30.22",        
-      },
-      {
-        title:"code compiled with a higher version of java",
-        biteText:"random text here random text here random text here random text here random text here",
-        keywords:["compile"],
-        category:"error",
-        timestamp:"2024-02-17 06.30.22",        
-      },
-      {
-        title:"sending email in spring boot",
-        biteText:"some random data for this some random data for this some random data for this some random data for this",
-        keywords:["spring","email"],
-        category:"learning",
-        timestamp:"2024-02-17 06.30.22",        
-      }
-    ]
-    return bites;
   }
 
 }

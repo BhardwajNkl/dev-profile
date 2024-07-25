@@ -1,19 +1,8 @@
-/* think about providing dark-ligth themes */
 .container-fluid{
     background-color:rgb(15 23 42);
     color: white;
 }
 
 .main-content{
-    /*
-    min-height is there just because we always want the scrollbar visible.
-    Because, the structure of page shifts a little bit if the user moves from a non-scroll page to a scroll page and vice-versa.
-    Find a better solution for this issue.
-    */
     min-height: 105vh;
 }
-
-/* trying to make navbar sticky */
-/* #nav-bar-container{
-    position: static;
-} */
