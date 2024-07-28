@@ -35,12 +35,6 @@ export class DummyDataService {
         description:"Proficient in creating responsive and interactive web pages using HTML, CSS, and JavaScript. Experienced in implementing modern web design principles and enhancing user experience.",
         category:["favourites"],
       },
-      // {
-      //   title:"JavaScript",
-      //   expertise:"Experienced",
-      //   description:"Can implement client-side functionalities. Familiar with functions, event listeners, DOM manipulation, objects, asynchronous JS and ES6 features.",
-      //   category:["favourites"],
-      // },
       {
         title:"Angular",
         expertise:"Intermediate",
@@ -80,7 +74,6 @@ export class DummyDataService {
       },
 
       // other
-
       {
         title:"React",
         expertise:"Intermediate",
@@ -118,9 +111,7 @@ export class DummyDataService {
         description:"Basic familiarity.",
         category:["other"],
       },
-
-
-
+      
       // {
       //   title:"Microservices",
       //   expertise:"Basic",
