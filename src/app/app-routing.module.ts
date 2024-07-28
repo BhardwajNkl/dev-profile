@@ -23,10 +23,10 @@ const routes: Routes = [
     path:"projects",
     component:ProjectsComponent
   },
-  {
-    path:"contact",
-    component:ContactComponent
-  }
+  // {
+  //   path:"contact",
+  //   component:ContactComponent
+  // }
 
 ];
 

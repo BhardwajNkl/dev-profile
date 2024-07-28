@@ -1,38 +1,71 @@
-/* about should be horizontal for large screens and vertical for small screens */
 #about{
-    margin-top: 5vh;
-    padding: 5pt;
-    /* 
-    it is sitting on top of app-component and it has no overriding style for background color.
-    So, we can use that same background color. 
-    */
+    margin-top: 15px;
+    padding: 5px;
     color:rgb(226 232 240);
     display: flex;
 }
 
-/* direct children of about */
 #about-col-1{
     flex: 0.5;
     font-size: 15pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #about-col-2{
     flex: 0.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* direct children of about-col-1 */
 .tagline{
     color:rgb(148 163 184);
 }
 
 #about-image {
+    text-align: center;
     img{
+    width: 80%;
     border-radius: 50%;
     }
 }
 
-/* direct children of about-col-2 */
 .introduction{
     padding: 5pt;
+}
+
+#contact-links{
+    a {
+        color: white;
+        font-size: 20pt;
+        margin-right: 10px;
+    }
+}
+
+
+/* for screen with small width */
+
+@media(min-width:500px) and (max-width:649px){
+    #about-col-1{
+        flex-direction: row;
+    }
+
+    #about-text{
+        flex:0.6;
+    }
+
+    #about-image{
+        flex: 0.4;
+    }
+}
+
+@media (max-width:650px) {
+    #about{
+        flex-direction: column;
+    }
+
+    #about-col-1, #about-col-2{
+        flex:none;
+    }
 }

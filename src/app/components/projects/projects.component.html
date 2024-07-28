@@ -1,24 +1,19 @@
-<!-- <div id="project-filter">
-    <span class="ms-5"> Java/Spring <input type="checkbox" name="java" id="java"></span>
-    <span class="ms-5"> Node/Express <input type="checkbox" name="node" id="node"></span>
-    <span class="ms-5"> Python <input type="checkbox" name="python" id="python"></span>
-    <span class="ms-5"> Angular <input type="checkbox" name="angular" id="angular"></span>
-    <span class="ms-5"> React <input type="checkbox" name="react" id="react"></span>
-</div> -->
-
+<div id="project-count">
+    Project Count: {{projects.length}}
+</div>
 <div id="projects">
     <div class="card project" *ngFor="let project of projects">
         <!-- <img src="" class="card-img-top" alt="project-image"> -->
         <div class="card-body">
             <h5 class="card-title">{{project.title}}</h5>
+            <i class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
             <p class="card-text">
                 <!-- show first 150 characters only and give a see more link -->
                 {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span>
             </p>
             <p>
-                Tech stack: <i>{{project.techStack}}</i><br>
-                Git repository: <i><a [href]="project.gitRepo" class="project-link">{{project.gitRepo}}</a></i><br>
-                Live here:<i><a [href]="project.liveUrl" class="project-link">{{project.liveUrl}}</a></i>
+                <i class="tech-stack">Dev Stack:  {{project.techStack}}</i><br>
+                <i class="source-code">Source Code: <a [href]="project.gitRepo" class="source-code-link">{{project.gitRepo}}</a></i><br>
             </p>
             <!-- <a href="#" class="btn btn-sm btn-primary bg-white text-black">See In Detail</a> -->
         </div>

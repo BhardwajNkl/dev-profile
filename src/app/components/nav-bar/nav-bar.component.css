@@ -1,25 +1,20 @@
 #nav-bar{
     display: flex;
-    color: #ffffff;
     border-bottom: solid 3pt;
     border-bottom-color: aqua;
+    gap: 5px;
 }
 
 .nav-link{
-    margin-left: 5pt;
-    padding: 3pt;
+    padding: 3pt 5pt;
     font-size: 14pt;
     color: #ffffff;
     text-decoration: none;
     text-transform: capitalize;
 }
 
-.active{
-    /* padding-left: 2pt; */
-    /* padding-right: 2pt; */
+.active, .nav-link:hover{
+    background-color: rgb(15,30,90);
     color: aqua;
-}
-
-.nav-link:hover{
-    color: cyan;
+    border-radius: 5px;
 }

@@ -15,10 +15,10 @@ export class DummyDataService {
       "name":"Nikhil Bhardwaj",
       "profession":"Fullstack Developer | 1 Year",
       "tagline":"I think & I code. Then I keep looking at the code until it becomes perfect.",
-      "introduction":["A perfection-oriented Java developer with a Master's degree in computer application and a comprehensive training in full stack development. Proven ability to write clean code and implement design patterns effectively.",
-                       "I have gained hands on learning experience on Spring framework with a focus on Spring web, Spring data JPA and Spring security through the projects I have done during the training. I am also familiar with Spring Boot microservices.",
-                       "Apart from coding, I take deep interest in modelling problems, designing the database, and discussions.",
-                     ],
+      "introduction":["Hello and welcome to my portfolio! I am a dedicated and enthusiastic Java Full Stack Developer with one year of comprehensive training in various technologies. Although I have not yet had the chance to work on real-world projects, my bench time has been spent rigorously refining my skills and deepening my understanding of full stack development.",
+        "I specialize in developing robust backend solutions using Spring Boot and creating engaging frontend experiences with Angular. I am proficient in managing relational databases and writing efficient SQL queries, ensuring that the data layer of my applications is both secure and performant. Additionally, my experience with JPA/Hibernate enhances my ability to handle data management seamlessly. I also have a strong grasp of unit and integration testing, which further ensures the quality and reliability of my code.",
+        "Explore my portfolio to see the projects I've worked on during my training and personal endeavors. I am eager to bring my skills to real-world projects and am confident in my ability to contribute effectively as a collaborative team player."
+      ],
       "mobile":"8888888888",
       "city":"Noida"
     }
@@ -28,90 +28,114 @@ export class DummyDataService {
 
   getSkills():Skill[]{
     const skills = [
+      // favourites
       {
-        title:"HTML",
+        title:"HTML CSS & JS",
         expertise:"Experienced",
-        description:"Can create nicely structured web pages.",
-        category:["programming"],
-        associatedProjects:["project1","project2","project3"]
+        description:"Proficient in creating responsive and interactive web pages using HTML, CSS, and JavaScript. Experienced in implementing modern web design principles and enhancing user experience.",
+        category:["favourites"],
       },
-      {
-        title:"CSS",
-        expertise:"Basic",
-        description:"Familiar with selectors, commonly used properties & values, flexbox, grid and responsive design.",
-        category:["programming"],
-        associatedProjects:["project1","project2"]
-      },
-      {
-        title:"JavaScript",
-        expertise:"Experienced",
-        description:"Can implement client-side functionalities. Familiar with functions, event listeners, DOM manipulation, objects, asynchronous JS and ES6 features.",
-        category:["programming"],
-        associatedProjects:["project1","project2","project3"]
-      },
-      {
-        title:"React",
-        expertise:"Intermediate",
-        description:"Hands on learning experience. Familiar with components, routing, props, hooks, context API, Redux and Middleware.",
-        category:["programming","framework"],
-        associatedProjects:["project1"]
-      },
+      // {
+      //   title:"JavaScript",
+      //   expertise:"Experienced",
+      //   description:"Can implement client-side functionalities. Familiar with functions, event listeners, DOM manipulation, objects, asynchronous JS and ES6 features.",
+      //   category:["favourites"],
+      // },
       {
         title:"Angular",
         expertise:"Intermediate",
-        description:"Good understanding and practice of Angualr components, data binding, directives, pipes, services, routing, auth guards, lifecycle methods, forms & form validation, and HTTP.",
-        category:["programming","framework"],
-        associatedProjects:["project1"]
+        description:"Experienced in developing dynamic and scalable web applications using Angular. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
+        category:["favourites"],
       },
       {
         title:"Java",
         expertise:"Experienced",
-        description:"Sound knowledge and practice of core Java including object-oriented programming, collections framework, exception handling, multi-threaded programming and file handling. Familiar with new features such as Streams API, functional interfaces and lambdas.",
-        category:["programming"],
-        associatedProjects:["project1"]
+        description:"Proficient in Java with extensive experience in developing backend services and applications. Skilled in object-oriented programming, data structures, algorithms, and Java frameworks such as Spring and Hibernate.",
+        category:["favourites"],
       },
       {
         title:"Spring Boot",
         expertise:"Intermediate",
-        description:"Have the ability to build scalable and secure web applications. Hands on learning experience covering Spring Core, Spring Data, Spring MVC, Spring Boot and Spring Security.",
-        category:["programming","framework"],
-        associatedProjects:["project1"]
+        description:"Experienced in developing scalable and robust applications using Spring Boot. Skilled in building RESTful APIs, microservices architecture, and integrating various Spring modules.",
+        category:["favourites"],
       },
       {
         title:"JPA/Hibernate",
         expertise:"Intermediate",
-        description:"Good understanding and practice of entities, entity relationship mapping, entity fetching, persistence lifecycle and custom queries.",
-        category:["framework"],
-        associatedProjects:["project1"]
+        description:"Proficient in using JPA and Hibernate for ORM (Object-Relational Mapping). Experienced in designing and managing relational databases, writing efficient queries, and optimizing data access.",
+        category:["favourites"],
       },
       {
-        title:"Microservices",
+        title:"Unit and Integration Testing",
         expertise:"Basic",
-        description:"Can implement different services, discovery server, inter-service communications, API gateway and centralized configurations. Familiar with exception handling mechanisms such as fallback and circuit-breaker patterns. ",
-        category:["other"],
-        associatedProjects:["project1"]
+        description:"Skilled in writing unit and integration tests using frameworks such as JUnit and Mockito. Experienced in Test-Driven Development (TDD) and ensuring code quality through thorough testing.",
+        category:["favourites"],
       },
+
       {
-        title:"Unit Testing",
-        expertise:"Basic",
-        description:"Hands on learning experience with JUnit and Mockito. Ability to write very fine test cases with great code coverage.",
+        title:"MySQL",
+        expertise:"Experienced",
+        description:"Experienced in designing, developing, and maintaining MySQL databases. Skilled in writing complex queries, optimizing database performance, and ensuring data integrity.",
+        category:["programming"],
+      },
+
+      // other
+
+      {
+        title:"React",
+        expertise:"Intermediate",
+        description:"Hands on learning experience. Familiar with components, routing, props, hooks, context API, Redux and Middleware.",
         category:["other"],
-        associatedProjects:["project1"]
       },
       {
         title:"Node And Express",
         expertise:"Intermediate",
         description:"Have done a couple of learning projects. Familiar with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
-        category:["programming","framework"],
-        associatedProjects:["project1"]
+        category:["other"],
       },
       {
-        title:"SQL",
+        title:"Git",
         expertise:"Experienced",
-        description:"Strong SQL and database design skills. Familiar with views, triggers, stored procedures, indexing, transactions and user management.",
-        category:["programming"],
-        associatedProjects:["project1"]
+        description:"Familiar with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
+        category:["other"],
       },
+      {
+        title:"Jenkins",
+        expertise:"Basic",
+        description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc.",
+        category:["other"],
+      },
+      {
+        title:"AWS",
+        expertise:"Basic",
+        description:"Familiar with EC2, S3, RDS, Lambda, Security groups, VPC, subnets and NACLs. Can deploy applications on EC2 or Elastic Beanstalk.",
+        category:["other"],
+      },
+
+      {
+        title:"React Native",
+        expertise:"Basic",
+        description:"Basic familiarity.",
+        category:["other"],
+      },
+
+
+
+      // {
+      //   title:"Microservices",
+      //   expertise:"Basic",
+      //   description:"Can implement different services, discovery server, inter-service communications, API gateway and centralized configurations. Familiar with exception handling mechanisms such as fallback and circuit-breaker patterns. ",
+      //   category:["other"],
+      // },
+
+      // {
+      //   title:"Docker and Kubernates",
+      //   expertise:"Basic",
+      //   description:"Getting an image, running, create own image and publishing to docker hub. Docker network, docker compose.",
+      //   category:["other"],
+      //   associatedProjects:["project1"]
+      // }
+
       // {
       //   title:"Elastisearch",
       //   expertise:"Basic",
@@ -132,42 +156,7 @@ export class DummyDataService {
       //   description:"Hands on learning experience. Can integrate with Spring applications and utilize efficiently.",
       //   category:["other"],
       //   associatedProjects:["project1"]
-      // },
-      {
-        title:"Git",
-        expertise:"Experienced",
-        description:"Familiar with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
-        category:["other"],
-        associatedProjects:["project1"]
-      },
-      {
-        title:"Jenkins",
-        expertise:"Basic",
-        description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc.",
-        category:["other"],
-        associatedProjects:["project1"]
-      },
-      {
-        title:"AWS",
-        expertise:"Basic",
-        description:"Familiar with EC2, S3, RDS, Lambda, Security groups, VPC, subnets and NACLs. Can deploy applications on EC2 or Elastic Beanstalk.",
-        category:["other"],
-        associatedProjects:["project1"]
-      },
-      // {
-      //   title:"Docker and Kubernates",
-      //   expertise:"Basic",
-      //   description:"Getting an image, running, create own image and publishing to docker hub. Docker network, docker compose.",
-      //   category:["other"],
-      //   associatedProjects:["project1"]
-      // },
-      {
-        title:"Camunda",
-        expertise:"Basic",
-        description:"Familiar with BPMN elements such as tasks, error events, message events, timer events, gateways, sub processes, etc. Familiar with Camunda Engine REST APIs and Camunda-Spring Boot integration.",
-        category:["programming","other"],
-        associatedProjects:["project1"]
-      }
+      // }
 
     ]
     return skills;
@@ -176,16 +165,10 @@ export class DummyDataService {
   getSkillFilters():SkillFilter[]{
     const skillFilters=[
       {
-        filter:"Programming"
-      },
-      {
-        filter:"Framework"
+        filter:"Favourites"
       },
       {
         filter:"Other"
-      },
-      {
-        filter:"All"
       }
     ]
     return skillFilters;

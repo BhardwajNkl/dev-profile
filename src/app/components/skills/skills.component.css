@@ -2,8 +2,8 @@
     display: flex;
     gap: 10pt;
     flex-wrap: wrap;
-
-    padding-left: 10pt;
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .skill-filter:hover{
@@ -11,10 +11,7 @@
     cursor: pointer;
 }
 
-/* the below class is for showing which filter is active */
 .active{
-    /* padding-left: 2pt; */
-    /* padding-right: 2pt; */
     border-bottom: 1pt solid;
     border-color: aqua;
     color: aqua;
@@ -22,23 +19,17 @@
 }
 
 #skills{
-    /* creates a grid layout where the columns will adjust automatically based on the available space, with each column being at least 250 pixels wide and expanding evenly to fill any additional space beyond that */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 20px;
-    padding: 5pt;
+    padding-top: 5px;
 }
 
 .skill{
-    background-color:rgb(15 23 42);
+    background-color: rgb(15 30 50);
     color:rgb(226 232 240);
-
-    border: 1px solid;
-    border-color: rgb(148 163 184)
-}
-
-.skill ul{
-    padding-left: 5pt;
+    border-radius: 20px;
+    box-shadow: 1px 1.5px 3px rgb(15 30 50);
 }
 
 .skill:hover{
@@ -46,3 +37,18 @@
     border-color: aqua;
 }
 
+.card-title{
+    color: cyan;
+}
+
+.skill-expertise{
+    color: orange;
+    font-weight: bold;
+}
+
+/* for extra small screens */
+@media (max-width:380px){
+    #skills{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }   
+}
