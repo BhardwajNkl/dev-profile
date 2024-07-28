@@ -3,4 +3,5 @@ export interface Skill {
     expertise:string,
     description:string,
     category:string[],
+    keyWords:string[],
 }

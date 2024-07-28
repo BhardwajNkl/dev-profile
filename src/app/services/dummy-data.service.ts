@@ -31,78 +31,90 @@ export class DummyDataService {
       // favourites
       {
         title:"HTML CSS & JS",
-        expertise:"Experienced",
+        expertise:"Intermediate",
         description:"Proficient in creating responsive and interactive web pages using HTML, CSS, and JavaScript. Experienced in implementing modern web design principles and enhancing user experience.",
         category:["favourites"],
+        keyWords:["Responsive Pages", "Flexbox", "ES6","Asynchronous JS","DOM manipulation"],
       },
       {
         title:"Angular",
-        expertise:"Intermediate",
+        expertise:"Basic",
         description:"Experienced in developing dynamic and scalable web applications using Angular. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
         category:["favourites"],
+        keyWords:["Component","Service","Interceptor","Guard","Component Lifecycle", "Routing","Http", "Forms"],
       },
       {
         title:"Java",
-        expertise:"Experienced",
+        expertise:"Interediate",
         description:"Proficient in Java with extensive experience in developing backend services and applications. Skilled in object-oriented programming, data structures, algorithms, and Java frameworks such as Spring and Hibernate.",
         category:["favourites"],
+        keyWords:["OOP","Exception Handling", "Multithreading","Collections","Lambda", "Streams"],
       },
       {
         title:"Spring Boot",
         expertise:"Intermediate",
         description:"Experienced in developing scalable and robust applications using Spring Boot. Skilled in building RESTful APIs, microservices architecture, and integrating various Spring modules.",
         category:["favourites"],
+        keyWords:["Beans", "MVC", "REST API","Spring Security", "Spring Data JPA", "Bean Validation", "Profiles"],
       },
       {
         title:"JPA/Hibernate",
         expertise:"Intermediate",
         description:"Proficient in using JPA and Hibernate for ORM (Object-Relational Mapping). Experienced in designing and managing relational databases, writing efficient queries, and optimizing data access.",
         category:["favourites"],
+        keyWords:["Entity Lifecycle","Entity Mapping", "JpaRepository", "Pagination"],
       },
       {
         title:"Unit and Integration Testing",
-        expertise:"Basic",
+        expertise:"Intermediate",
         description:"Skilled in writing unit and integration tests using frameworks such as JUnit and Mockito. Experienced in Test-Driven Development (TDD) and ensuring code quality through thorough testing.",
         category:["favourites"],
+        keyWords:["JUnit","Mockito","MockMVC"],
       },
 
       {
         title:"MySQL",
-        expertise:"Experienced",
+        expertise:"Intermediate",
         description:"Experienced in designing, developing, and maintaining MySQL databases. Skilled in writing complex queries, optimizing database performance, and ensuring data integrity.",
-        category:["programming"],
+        category:["Favourites"],
+        keyWords:["SQL","Stored Procedure","functions"],
       },
 
       // other
       {
         title:"React",
-        expertise:"Intermediate",
+        expertise:"Basic",
         description:"Hands on learning experience. Familiar with components, routing, props, hooks, context API, Redux and Middleware.",
         category:["other"],
+        keyWords:["Components","Routing","Redux","Middleware"],
       },
       {
         title:"Node And Express",
-        expertise:"Intermediate",
+        expertise:"Basic",
         description:"Have done a couple of learning projects. Familiar with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
         category:["other"],
+        keyWords:[],
       },
       {
         title:"Git",
-        expertise:"Experienced",
+        expertise:"Intermediate",
         description:"Familiar with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
         category:["other"],
+        keyWords:[],
       },
       {
         title:"Jenkins",
         expertise:"Basic",
         description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc.",
         category:["other"],
+        keyWords:["Job Creation","Build Sceduling"],
       },
       {
         title:"AWS",
         expertise:"Basic",
         description:"Familiar with EC2, S3, RDS, Lambda, Security groups, VPC, subnets and NACLs. Can deploy applications on EC2 or Elastic Beanstalk.",
         category:["other"],
+        keyWords:[],
       },
 
       {
@@ -110,6 +122,7 @@ export class DummyDataService {
         expertise:"Basic",
         description:"Basic familiarity.",
         category:["other"],
+        keyWords:[],
       },
       
       // {

@@ -12,6 +12,12 @@
                 <!-- show first 150 characters only and give a see more link -->
                 {{skill.description}}
             </span>
+            <!-- key words -->
+             <div class="keyword-container">
+
+                 <span class="keyword" *ngFor="let key of skill.keyWords">{{key}}</span>
+                 
+             </div>
         </div>
     </div>
 </div>
