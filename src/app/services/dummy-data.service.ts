@@ -15,9 +15,9 @@ export class DummyDataService {
       "name":"Nikhil Bhardwaj",
       "profession":"Fullstack Developer | 1 Year",
       "tagline":"I think & I code. Then I keep looking at the code until it becomes perfect.",
-      "introduction":["Hello and welcome to my portfolio! I am a dedicated and enthusiastic Java Full Stack Developer with one year of comprehensive training in various technologies. Although I have not yet had the chance to work on real-world projects, my bench time has been spent rigorously refining my skills and deepening my understanding of full stack development.",
-        "I specialize in developing robust backend solutions using Spring Boot and creating engaging frontend experiences with Angular. I am proficient in managing relational databases and writing efficient SQL queries, ensuring that the data layer of my applications is both secure and performant. Additionally, my experience with JPA/Hibernate enhances my ability to handle data management seamlessly. I also have a strong grasp of unit and integration testing, which further ensures the quality and reliability of my code.",
-        "Explore my portfolio to see the projects I've worked on during my training and personal endeavors. I am eager to bring my skills to real-world projects and am confident in my ability to contribute effectively as a collaborative team player."
+      "introduction":["Hello and welcome to my portfolio! I am a Java Full Stack Developer with one year of comprehensive training in various technologies. Although I have not yet had the chance to work on real-world projects, I have worked hard during the bench time to refine my skills and strengthen my understanding of full stack development.",
+        "I specialize in developing backend solutions using Spring Boot and creating engaging frontend experiences with Angular. I am proficient in working with relational databases and writing efficient SQL queries. Additionally, my experience with JPA/Hibernate enables me to handle data management seamlessly. I can also write unit and integration tests that ensures the quality and reliability of my code.",
+        "Please explore my portfolio to see the projects I have worked on during my training and personal endeavors. I am eager to bring my skills to real-world projects and am confident in my ability to contribute effectively as a collaborative team person."
       ],
       "mobile":"8888888888",
       "city":"Noida"
@@ -29,55 +29,57 @@ export class DummyDataService {
   getSkills():Skill[]{
     const skills = [
       // favourites
-      {
-        title:"HTML CSS & JS",
-        expertise:"Intermediate",
-        description:"Proficient in creating responsive and interactive web pages using HTML, CSS, and JavaScript. Experienced in implementing modern web design principles and enhancing user experience.",
-        category:["favourites"],
-        keyWords:["Responsive Pages", "Flexbox", "ES6","Asynchronous JS","DOM manipulation"],
-      },
-      {
-        title:"Angular",
-        expertise:"Basic",
-        description:"Experienced in developing dynamic and scalable web applications using Angular. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
-        category:["favourites"],
-        keyWords:["Component","Service","Interceptor","Guard","Component Lifecycle", "Routing","Http", "Forms"],
-      },
+
       {
         title:"Java",
         expertise:"Interediate",
-        description:"Proficient in Java with extensive experience in developing backend services and applications. Skilled in object-oriented programming, data structures, algorithms, and Java frameworks such as Spring and Hibernate.",
+        description:"Proficient in Java with extensive hands-on experience. Skilled in object-oriented programming, collections, exception handling, and multithreading.",
         category:["favourites"],
-        keyWords:["OOP","Exception Handling", "Multithreading","Collections","Lambda", "Streams"],
+        keyWords:["Java 8 features"],
       },
       {
         title:"Spring Boot",
         expertise:"Intermediate",
-        description:"Experienced in developing scalable and robust applications using Spring Boot. Skilled in building RESTful APIs, microservices architecture, and integrating various Spring modules.",
+        description:"Proficient in developing web applications using Spring Boot. Skilled in building RESTful APIs, creating data access layer and securing the application using Spring Security.",
         category:["favourites"],
-        keyWords:["Beans", "MVC", "REST API","Spring Security", "Spring Data JPA", "Bean Validation", "Profiles"],
+        keyWords:["REST", "MVC", "Bean Validation", "Profiles"],
       },
       {
         title:"JPA/Hibernate",
         expertise:"Intermediate",
-        description:"Proficient in using JPA and Hibernate for ORM (Object-Relational Mapping). Experienced in designing and managing relational databases, writing efficient queries, and optimizing data access.",
+        description:"Proficient in using JPA with Hibernate for ORM. Skilled in domain modelling, converting the model into JPA entities and mappings. I can utilize JPA's custom finders as well as write my own efficient queries.",
         category:["favourites"],
-        keyWords:["Entity Lifecycle","Entity Mapping", "JpaRepository", "Pagination"],
+        keyWords:["JpaRepository", "Paging", "Sorting"],
       },
       {
         title:"Unit and Integration Testing",
         expertise:"Intermediate",
-        description:"Skilled in writing unit and integration tests using frameworks such as JUnit and Mockito. Experienced in Test-Driven Development (TDD) and ensuring code quality through thorough testing.",
+        description:"Skilled in writing unit and integration tests using frameworks such as JUnit, Mockito and MockMVC. With finely written tests, I ensure code quality and reliability.",
         category:["favourites"],
-        keyWords:["JUnit","Mockito","MockMVC"],
+        keyWords:[],
       },
 
       {
+        title:"HTML CSS & JS",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive web pages using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["Responsive Websites", "ES6 Features","Asynchronous JS"],
+      },
+      {
+        title:"Angular",
+        expertise:"Basic",
+        description:"Angular is my favourite frontend framework. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
+        category:["favourites"],
+        keyWords:["Interceptor","Guard","Component Lifecycle", "Routing","Form Validaion"],
+      },
+      
+      {
         title:"MySQL",
         expertise:"Intermediate",
-        description:"Experienced in designing, developing, and maintaining MySQL databases. Skilled in writing complex queries, optimizing database performance, and ensuring data integrity.",
+        description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
         category:["Favourites"],
-        keyWords:["SQL","Stored Procedure","functions"],
+        keyWords:["SQL"],
       },
 
       // other
@@ -86,12 +88,19 @@ export class DummyDataService {
         expertise:"Basic",
         description:"Hands on learning experience. Familiar with components, routing, props, hooks, context API, Redux and Middleware.",
         category:["other"],
-        keyWords:["Components","Routing","Redux","Middleware"],
+        keyWords:[],
       },
       {
-        title:"Node And Express",
+        title:"Express JS",
         expertise:"Basic",
-        description:"Have done a couple of learning projects. Familiar with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
+        description:"I have done a couple of learning projects. Familiar with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
+        category:["other"],
+        keyWords:[],
+      },
+      {
+        title:"React Native",
+        expertise:"Basic",
+        description:"Basic familiarity. Gained hands on experience by working on a couple of android app development projects.",
         category:["other"],
         keyWords:[],
       },
@@ -107,20 +116,12 @@ export class DummyDataService {
         expertise:"Basic",
         description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc.",
         category:["other"],
-        keyWords:["Job Creation","Build Sceduling"],
+        keyWords:[],
       },
       {
         title:"AWS",
         expertise:"Basic",
         description:"Familiar with EC2, S3, RDS, Lambda, Security groups, VPC, subnets and NACLs. Can deploy applications on EC2 or Elastic Beanstalk.",
-        category:["other"],
-        keyWords:[],
-      },
-
-      {
-        title:"React Native",
-        expertise:"Basic",
-        description:"Basic familiarity.",
         category:["other"],
         keyWords:[],
       },
@@ -232,19 +233,19 @@ export class DummyDataService {
         "description":"Created a system to automatically recognise and read number plates of vehicles. The system saves the detected vehicle numbers in a database."
         
       },
+      // {
+      //   title:"BTube",
+      //   techStack:["Angular","Bootstrap","CSS"],
+      //   gitRepo:"not available",
+      //   liveUrl:"not available",
+      //   "description":"Created a frontend application that will work as a video library. The application uses YouTube's API for searching and playing videos. This application helps in avoiding distractions faced on YouTube."
+      // },
       {
-        title:"BTube",
-        techStack:["Angular","Bootstrap","CSS"],
-        gitRepo:"not available",
-        liveUrl:"not available",
-        "description":"Created a frontend application that will work as a video library. The application uses YouTube's API for searching and playing videos. This application helps in avoiding distractions faced on YouTube."
-      },
-      {
-        title:"Bank App/ Microservices POC",
+        title:"Microservices POC",
         techStack:["Spring Boot", "Spring Cloud", "Spring Data JPA","H2 in-memory database"],
         gitRepo:"not available",
         liveUrl:"not available",
-        "description":"Created two microservices; customer-management and account management, each having various required endpoints to support banking process. Proper validation and exception handling was done for both the services. Utilized Eureka server for service discovery. Implemented API gateway and config-server as well."
+        "description":"Created two microservices; customer-management and account management, each having various required endpoints to support common banking operations such as account creation, deposit, withdrawal and account deletion. Proper validation and exception handling was done for both the services. Utilized Eureka server for service discovery. Implemented API gateway and config-server as well."
       }
     ]
     return projects;
