@@ -9,7 +9,8 @@
             <i class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
             <p class="card-text">
                 <!-- show first 150 characters only and give a see more link -->
-                {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span>
+                <!-- {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span> -->
+                 {{project.description}}
             </p>
             <p>
                 <i class="tech-stack">Dev Stack:  {{project.techStack}}</i><br>
