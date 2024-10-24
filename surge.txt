@@ -1,6 +1,11 @@
 v1: vigorous-chess.surge.sh
 v2: enchanting-bulb.surge.sh
 ============================
+
+BUILDING:
+ng build --base-href "https://<your-username>.github.io/<your-repo-name>/"
+
+
  navbar: the app is currently having two main pages:
     1. default route: displays person's profile.
     2. daily-bites: displays the notes of the person.
