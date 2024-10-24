@@ -1,20 +1,22 @@
-<div id="project-count">
+<!-- <div id="project-count">
     Project Count: {{projects.length}}
-</div>
+</div> -->
 <div id="projects">
     <div class="card project" *ngFor="let project of projects">
         <!-- <img src="" class="card-img-top" alt="project-image"> -->
         <div class="card-body">
             <h5 class="card-title">{{project.title}}</h5>
-            <i class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
+            <i *ngIf="project.liveUrl" class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
+            <span *ngIf="project.seniorRating" class="rating">[Senior's Rating: {{project.seniorRating}}]</span>
+            <!-- <hr> -->
             <p class="card-text">
                 <!-- show first 150 characters only and give a see more link -->
                 <!-- {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span> -->
                  {{project.description}}
             </p>
             <p>
-                <i class="tech-stack">Dev Stack:  {{project.techStack}}</i><br>
-                <i class="source-code">Source Code: <a [href]="project.gitRepo" class="source-code-link">{{project.gitRepo}}</a></i><br>
+                <i class="tech-stack">Tech Stack:  {{project.techStack}}</i><br>
+                <i *ngIf="project.gitRepo" class="source-code">Source Code: <a [href]="project.gitRepo" class="source-code-link">{{project.gitRepo}}</a></i><br>
             </p>
             <!-- <a href="#" class="btn btn-sm btn-primary bg-white text-black">See In Detail</a> -->
         </div>

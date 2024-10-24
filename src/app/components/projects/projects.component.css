@@ -18,7 +18,7 @@
 
 .project:hover{
     color: white;
-    border-color: aqua;
+    /* border-color: aqua; */
 }
 
 .source-code-link{
@@ -43,9 +43,9 @@
     color: cyan;
 }
 
-.tech-stack, .live-url{
+.tech-stack, .live-url, .rating{
     color: orange;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .source-code{

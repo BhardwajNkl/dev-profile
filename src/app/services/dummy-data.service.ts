@@ -194,99 +194,100 @@ export class DummyDataService {
   getProjects():Project[]{
     const projects = [
       {
-        title:"Product Catalogue (Backend)",
-        techStack:["Maven","Spring Boot","Spring Data JPA","Spring Security","MySQL"],
+        title:"Product Catalogue",
+        techStack:["Maven","Spring Boot","JPA","Spring Security","MySQL","Angular", "CSS", "Bootstrap"],
         gitRepo:"https://github.com/BhardwajNkl/product-catalogue-springboot-backend",
-        liveUrl:"not available",
+        liveUrl:null,
         // "description":"Created REST APIs for searching products, viewing product details, checking availability, etc. Implemented JWT token based authentication to secure some endpoints. Configured CORS properly."
-        description:"Developed a product catalogue application featuring RESTful APIs for user registration, login, product search, detailed product views, and availability checks. Secured specific endpoints with JWT token-based authentication, ensuring secure user interactions."
-      },
-      {
-        title:"Product Catalogue (Frontend)",
-        techStack:["Angular","Bootstrap","CSS"],
-        gitRepo:"https://github.com/BhardwajNkl/product-catalogue-angular-frontent",
-        liveUrl:"not available",
-        // "description":"Created a decent frontend for the product catalogue application. Implemented auth guards. Implemented a feature to filter the products based on brands or price range."
-        description:"Designed and implemented a user-friendly frontend for product catalog application using Angular, including features like auth guards for protected routes and filtering products by brand or price range, enhancing user experience and application security."
+        // description:"Developed a product catalogue application featuring RESTful APIs for user registration, login, product search, detailed product views, and availability checks. Secured specific endpoints with JWT token-based authentication, ensuring secure user interactions."
+        description:"Developed a product catalogue web application featuring RESTful APIs for user registration, login, product search, detailed product views, and availability checks. Secured specific endpoints with JWT token-based authentication, ensuring secure user interactions. Designed and implemented a user-friendly frontend using Angular, including features like auth guards for protected routes and filtering products by brand or price range, enhancing user experience and application security",
+        seniorRating:"9.7/10"
       },
       {
         title:"Online Food Ordering System",
-        techStack:["Maven","Spring Boot","Spring Data JPA","MySQL", "Spring Security"],
+        techStack:["Maven","Spring Boot","JPA","MySQL", "Spring Security"],
         gitRepo:"https://github.com/BhardwajNkl/online-food-ordering-system",
-        liveUrl:"not available",
-        description:"Developed an online food ordering system with RESTful APIs, enabling admins to register and manage restaurants and their dishes. Customers can register, login, view restaurant and dish details, place orders, and receive bills. Additionally, customers can rate and review dishes after ordering. The system includes features for searching dishes by cuisine and sorting them by rating. Implemented Spring Security for robust authentication and role-based authorization, ensuring secure access for both admins and customers."
+        liveUrl:null,
+        description:"Developed an online food ordering system with RESTful APIs, enabling admins to register and manage restaurants and their dishes. Customers can register, login, view restaurant and dish details, place orders, and receive bills. Additionally, customers can rate and review dishes after ordering. The system includes features for searching dishes by cuisine and sorting them by rating. Implemented Spring Security for robust authentication and role-based authorization, ensuring secure access for both admins and customers.",
+        seniorRating:"4/5"
       },
 
       {
         title:"Notes Management",
-        techStack:["Maven","Spring Boot","Spring Data JPA","MySQL", "Spring Security"],
-        gitRepo:"not available",
-        liveUrl:"not available",
-        "description":"I developed a Notes Management System that allows users to securely store and manage their personal notes. Upon logging in, users can access their 10 most recent notes, while older notes are automatically deleted every hour. This feature was implemented as a learning exercise to explore task scheduling. The application supports full CRUD functionality, allowing users to create, view, and delete notes. Input validation ensures that notes include only specific special characters [@, ; & * + -] and are limited to 500 characters. The system is designed with a clean, intuitive interface for a seamless user experience."
+        techStack:["Maven","Spring Boot","JPA","MySQL", "Spring Security"],
+        gitRepo:null,
+        liveUrl:null,
+        "description":"I developed a Notes Management System that allows users to securely store and manage their personal notes. Upon logging in, users can access their 10 most recent notes, while older notes are automatically deleted every hour. This feature was implemented as a learning exercise to explore task scheduling. The application supports full CRUD functionality, allowing users to create, view, and delete notes. Input validation ensures that notes include only specific special characters [@, ; & * + -] and are limited to 500 characters. The system is designed with a clean, intuitive interface for a seamless user experience.",
+        seniorRating:"4/5"
       },
 
       {
         title:"Result Management",
         techStack:["Express JS","EJS","CSS","MySQL","Sequelize","NPM"],
         gitRepo:"https://github.com/BhardwajNkl/node-JS-result-management",
-        liveUrl:"not available",
+        liveUrl:null,
         // "description":"A web application for teachers to create, update and delete results. Students can view their results. Implemented JWT token based authentication and role based authorization."
-        description:"In this project, I developed a web application using Express.js, designed to manage student results. The app supports two types of users: teachers and students. After logging in, teachers have the ability to create, update, and delete student results. Students, on the other hand, can log in to view their individual results. This project allowed me to gain practical experience with Express.js, user authentication, and role-based access control."
+        description:"In this project, I developed a web application using Express.js, designed to manage student results. The app supports two types of users: teachers and students. After logging in, teachers have the ability to create, update, and delete student results. Students, on the other hand, can log in to view their individual results. This project allowed me to gain practical experience with Express.js, user authentication, and role-based access control.",
+        seniorRating:"5/5"
       },
 
       {
         title:"Blog App",
         techStack:["React","Redux","Bootstrap","CSS","NPM"],
         gitRepo:"https://github.com/BhardwajNkl/react-blog-app",
-        liveUrl:"not available",
+        liveUrl:null,
         // "description":"The app allows a user to create, update, delete and like notes. Utilized Redux for state management. The app uses browser's local storage for persistence."
-        description:"In this project, I developed a simple blogging application using React.js. The app allows users to create, view, update, and delete posts, with all data stored locally in the browser's localStorage. Key features include the ability to click on a post to view its detailed content, edit the post, and delete it if needed. This project helped me deepen my understanding of React components, state management, and localStorage."
+        description:"In this project, I developed a simple blogging application using React.js. The app allows users to create, view, update, and delete posts, with all data stored locally in the browser's localStorage. Key features include the ability to click on a post to view its detailed content, edit the post, and delete it if needed. This project helped me deepen my understanding of React components, state management, and localStorage.",
+        seniorRating:"4.2/5"
       },
       // {
       //   title:"BConnect",
       //   techStack:["Node JS","Express JS", "EJS", "Socket.io","CSS"],
-      //   gitRepo:"not available",
-      //   liveUrl:"not available",
+      //   gitRepo:null,
+      //   liveUrl:null,
       //   "description":"An end-to-end encryption-based chat app. Users can find one another using their BConnect numbers. They can save contacts. Users can talk to online users only. There is no persistence of messages."
       // },
 
       // {
       //   title:"BTube",
       //   techStack:["Angular","Bootstrap","CSS"],
-      //   gitRepo:"not available",
-      //   liveUrl:"not available",
+      //   gitRepo:null,
+      //   liveUrl:null,
       //   "description":"Created a frontend application that will work as a video library. The application uses YouTube's API for searching and playing videos. This application helps in avoiding distractions faced on YouTube."
       // },
       {
         title:"Microservices Project",
-        techStack:["Maven", "Spring Boot", "Spring Cloud", "Spring Data JPA","H2 in-memory database"],
-        gitRepo:"not available",
-        liveUrl:"not available",
-        description:"I designed and implemented a microservices-based system using Spring Boot to explore microservices architecture. The project features two services: Customer Management and Account Management. The Customer Management service handles customer data, including adding, retrieving, updating, and deleting customers, with the added functionality that deleting a customer also removes their associated account. The Account Management service manages account operations such as deposit, withdrawal, retrieving account details, and deleting accounts, with validation of customer details for transactions. The system utilizes Eureka Server for service discovery, an API Gateway, and a Config Server for centralized configuration. This project helped me learn designing microservices systems."
+        techStack:["Maven", "Spring Boot", "Spring Cloud", "JPA","H2 in-memory database"],
+        gitRepo:null,
+        liveUrl:null,
+        description:"I designed and implemented a microservices-based system using Spring Boot to explore microservices architecture. The project features two services: Customer Management and Account Management. The Customer Management service handles customer data, including adding, retrieving, updating, and deleting customers, with the added functionality that deleting a customer also removes their associated account. The Account Management service manages account operations such as deposit, withdrawal, retrieving account details, and deleting accounts, with validation of customer details for transactions. The system utilizes Eureka Server for service discovery, an API Gateway, and a Config Server for centralized configuration. This project helped me learn designing microservices systems.",
+        seniorRating:"4/5"
       },
 
       {
         title:"Contact App for Android",
         techStack:["React Native","SQLite","Android Studio"],
-        gitRepo:"not available",
-        liveUrl:"not available",
-        "description":"I developed a Contacts Management App for Android using React Native, providing users with a seamless way to store, view, and manage their contacts. The app features an intuitive interface where users can easily add new contacts, edit existing ones, and delete those they no longer need. Contacts are securely saved in a local SQLite database, ensuring data persistence even when the app is closed. The app also includes a search feature, allowing users to quickly find specific contacts. Additionally, there is a dedicated screen for favorite contacts, enabling users to access their most important contacts with ease."
+        gitRepo:null,
+        liveUrl:null,
+        "description":"I developed a Contacts Management App for Android using React Native, providing users with a seamless way to store, view, and manage their contacts. The app features an intuitive interface where users can easily add new contacts, edit existing ones, and delete those they no longer need. Contacts are securely saved in a local SQLite database, ensuring data persistence even when the app is closed. The app also includes a search feature, allowing users to quickly find specific contacts. Additionally, there is a dedicated screen for favorite contacts, enabling users to access their most important contacts with ease.",
+        seniorRating:"3/5"
       },
 
       {
         title:"Personal Task Manager",
         techStack:["HTML5", "CSS3", "JavaScript"],
         gitRepo:"https://github.com/BhardwajNkl/task-manager",
-        liveUrl:"not available",
-        description:"I developed a dynamic Todo Management application utilizing HTML5, CSS3, and JavaScript. The app features an 'Add Task' button that opens a form for users to input task details. Leveraging the drag-and-drop API, users can seamlessly move tasks between different states like 'To-Do', 'Doing' and 'Done'. The app is fully responsive, adapting to all screen sizes to ensure an optimal user experience."
+        liveUrl:null,
+        description:"I developed a dynamic Todo Management application utilizing HTML5, CSS3, and JavaScript. The app features an 'Add Task' button that opens a form for users to input task details. Leveraging the drag-and-drop API, users can seamlessly move tasks between different states like 'To-Do', 'Doing' and 'Done'. The app is fully responsive, adapting to all screen sizes to ensure an optimal user experience.",
+        seniorRating:"4/5"
       },
       {
         title:"ANPR system",
         techStack:["Python","YOLOv8"],
-        gitRepo:"not available",
-        liveUrl:"not available",
-        "description":"Created a system to automatically recognise and read number plates of vehicles. The system saves the detected vehicle numbers in a database."
-        
+        gitRepo:null,
+        liveUrl:null,
+        "description":"Created a system to automatically recognise and read number plates of vehicles. The system saves the detected vehicle numbers in a database.",
+        seniorRating:null 
       },      
     ]
     return projects;
