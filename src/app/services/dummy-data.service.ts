@@ -15,13 +15,12 @@ export class DummyDataService {
       "name":"Nikhil Bhardwaj",
       "profession":"Fullstack Developer | 1 Year",
       "tagline":"I think & I code. Then I keep looking at the code until it becomes perfect.",
-      // "introduction":["Hello and welcome to my portfolio! I am a Java Full Stack Developer with one year of comprehensive training in various technologies. Although I have not yet had the chance to work on real-world projects, I have worked hard during the bench time to refine my skills and strengthen my understanding of full stack development.",
-      //   "I specialize in developing backend solutions using Spring Boot and creating engaging frontend experiences with Angular. I am proficient in working with relational databases and writing efficient SQL queries. Additionally, my experience with JPA/Hibernate enables me to handle data management seamlessly. I can also write unit and integration tests that ensures the quality and reliability of my code.",
+      // "introduction":["Hi there! I am a Fullstack Developer with a master’s degree in computer application, supported by a rigorous training and extensive hands-on experience. I have a strong foundation in Java, JavaScript and SQL languages.",
+      //   "I specialize in developing backend solutions using Spring Boot and creating engaging frontend experiences with Angular. I am proficient in working with relational databases and writing efficient SQL queries. Additionally, my experience with JPA/Hibernate enables me to handle data management seamlessly. I can secure applications using Spring Security and I can also write unit & integration tests that ensures the quality and reliability of my code.",
       //   "Please explore my portfolio to see the projects I have worked on during my training and personal endeavors. I am eager to bring my skills to real-world projects and am confident in my ability to contribute effectively as a collaborative team person."
       // ],
-      "introduction":["Hi there! I am a Fullstack Developer with a master’s degree in computer application, supported by a rigorous training and extensive hands-on experience. I have a strong foundation in Java, JavaScript and SQL languages.",
-        "I specialize in developing backend solutions using Spring Boot and creating engaging frontend experiences with Angular. I am proficient in working with relational databases and writing efficient SQL queries. Additionally, my experience with JPA/Hibernate enables me to handle data management seamlessly. I can secure applications using Spring Security and I can also write unit & integration tests that ensures the quality and reliability of my code.",
-        "Please explore my portfolio to see the projects I have worked on during my training and personal endeavors. I am eager to bring my skills to real-world projects and am confident in my ability to contribute effectively as a collaborative team person."
+      "introduction":["A solution-driven developer with a strong foundation in Java, JavaScript and SQL languages. Skilled in backend development with Spring Boot, and creating intuitive frontend interfaces using Angular.", 
+        "Adept at problem-solving and proficient in working with relational databases. A collaborative team player with the ability to quickly adapt to new challenges and technologies, always eager to learn and contribute effectively.",
       ],
       "mobile":"8888888888",
       "city":"Noida"
@@ -33,20 +32,34 @@ export class DummyDataService {
   getSkills():Skill[]{
     const skills = [
       // favourites
-
+      {
+        title:"HTML CSS & JS",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["Responsive Websites", "ES6","Asynchronous JS", "DOM", "JS APIs"],
+      },
       {
         title:"Java",
         expertise:"Interediate",
         description:"Proficient in Java with extensive hands-on experience. Skilled in object-oriented programming, collections, exception handling, and multithreading.",
         category:["favourites"],
-        keyWords:["Java 8 features"],
+        keyWords:["Java 8"],
+      },
+
+      {
+        title:"RDBMS",
+        expertise:"Intermediate",
+        description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
+        category:["Favourites"],
+        keyWords:["SQL"],
       },
       {
         title:"Spring Boot",
         expertise:"Basic",
         description:"Proficient in developing backend solutions using Spring Boot. Skilled in building RESTful APIs, creating data access layer and securing the application using Spring Security.",
         category:["favourites"],
-        keyWords:["REST API", "JPA", "Spring Security", "Exception handling"],
+        keyWords:["JPA", "Security", "Unit tests", "Bean validation" ,"Exception handling", "AOP"],
       },
       {
         title:"JPA/Hibernate",
@@ -56,48 +69,55 @@ export class DummyDataService {
         keyWords:["CRUD", "Paging", "Sorting"],
       },
       {
-        title:"Unit and Integration Testing",
+        title:"Unit Testing",
         expertise:"Basic",
         description:"Skilled in writing unit and integration tests using JUnit5, Mockito and MockMVC. With finely written tests, I ensure code quality and reliability.",
         category:["favourites"],
         keyWords:[],
-      },
-
-      {
-        title:"HTML CSS & JS",
-        expertise:"Intermediate",
-        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
-        category:["favourites"],
-        keyWords:["Responsive Websites", "ES6 Features","Asynchronous JS", "DOM", "JS APIs"],
       },
       {
         title:"Angular",
         expertise:"Basic",
         description:"Angular is my favourite frontend framework. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
         category:["favourites"],
-        keyWords:["Component Lifecycle", "Routing","Form Validaion", "Interceptor","Guard"],
+        keyWords:["Form Validaion", "Interceptor","Guard"],
       },
-      
+
       {
-        title:"RDBMS",
+        title:"Git",
         expertise:"Intermediate",
-        description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
+        description:"Hands-on practice. Experienced with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
         category:["Favourites"],
-        keyWords:["SQL"],
+        keyWords:[],
+      },
+      {
+        title:"Jenkins",
+        expertise:"Basic",
+        description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc. Can build pipelines for smooth CI/CD.",
+        category:["Favourites"],
+        keyWords:[],
+      },
+
+      {
+        title:"Docker and Kubernates",
+        expertise:"Basic",
+        description:"Hands-on learning through a couple of projects. Can write dockerfile, docker-compose file, build images and deploy applications on Kubernetes clusters.",
+        category:["Favourites"],
+        keyWords:[]
       },
 
       // other
       {
         title:"React",
         expertise:"Basic",
-        description:"Hands on learning experience. Familiar with components, routing, props, hooks, context API, Redux and Middleware.",
+        description:"Hands on learning experience. Experienced with components, routing, props, hooks, context API and Redux.",
         category:["other"],
         keyWords:[],
       },
       {
         title:"Express JS",
         expertise:"Basic",
-        description:"I have done a couple of learning projects. Familiar with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
+        description:"I have done a couple of learning projects. Experienced with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
         category:["other"],
         keyWords:[],
       },
@@ -108,20 +128,7 @@ export class DummyDataService {
         category:["other"],
         keyWords:[],
       },
-      {
-        title:"Git",
-        expertise:"Intermediate",
-        description:"Familiar with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
-        category:["other"],
-        keyWords:[],
-      },
-      {
-        title:"Jenkins",
-        expertise:"Basic",
-        description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc.",
-        category:["other"],
-        keyWords:[],
-      },
+
       {
         title:"AWS",
         expertise:"Basic",
@@ -130,20 +137,20 @@ export class DummyDataService {
         keyWords:[],
       },
       
+       {
+        title:"Design Patterns",
+        expertise:"Basic",
+        description:"Familiar with commonly used design patterns. Can identify use cases and apply the patterns effectively.",
+        category:["other"],
+        keyWords:[]
+      },
+      
       // {
       //   title:"Microservices",
       //   expertise:"Basic",
       //   description:"Can implement different services, discovery server, inter-service communications, API gateway and centralized configurations. Familiar with exception handling mechanisms such as fallback and circuit-breaker patterns. ",
       //   category:["other"],
       // },
-
-      // {
-      //   title:"Docker and Kubernates",
-      //   expertise:"Basic",
-      //   description:"Getting an image, running, create own image and publishing to docker hub. Docker network, docker compose.",
-      //   category:["other"],
-      //   associatedProjects:["project1"]
-      // }
 
       // {
       //   title:"Elastisearch",
