@@ -3,7 +3,9 @@ v2: enchanting-bulb.surge.sh
 ============================
 
 BUILDING:
-ng build --base-href "https://<your-username>.github.io/<your-repo-name>/"
+>> ng build --base-href "https://<your-username>.github.io/<your-repo-name>/" [include double quotes]
+>> copy 404.html to docs directory.
+>> push
 
 
  navbar: the app is currently having two main pages:

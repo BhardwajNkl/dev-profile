@@ -21,36 +21,30 @@
     /* border-color: aqua; */
 }
 
+.tech-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 4px;
+}
+.tech{
+    padding-left: 2px;
+    padding-right: 2px;
+    border-radius: 5px;
+    background-color: orange;
+    color: white;
+}
+
 .source-code-link{
-    text-decoration: none;
-    color: greenyellow;
-}
-
-.live-link{
-    text-decoration: none;
-    color: orange;
-}
-
-.tech-stack, .source-code{
-    margin-top: 2px;
-}
-
-.source-code-link:hover, .live-link:hover{
-    color:yellowgreen;
+    color: white;
 }
 
 .card-title{
     color: cyan;
 }
 
-.tech-stack, .live-url, .rating{
+.live-url, .rating{
     color: orange;
-    /* font-weight: bold; */
-}
-
-.source-code{
-    color: greenyellow;
-    font: bold;
 }
 
 

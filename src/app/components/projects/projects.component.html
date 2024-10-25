@@ -5,20 +5,28 @@
     <div class="card project" *ngFor="let project of projects">
         <!-- <img src="" class="card-img-top" alt="project-image"> -->
         <div class="card-body">
-            <h5 class="card-title">{{project.title}}</h5>
-            <i *ngIf="project.liveUrl" class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
-            <span *ngIf="project.seniorRating" class="rating">[Senior's Rating: {{project.seniorRating}}]</span>
+            <h5 class="card-title">
+                {{project.title}}
+            </h5>
+            <div *ngIf="project.liveUrl">
+                <i class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
+            </div>
+            <div *ngIf="project.gitRepo">
+                <a class="source-code-link" [href]="project.gitRepo" target="_blank">[Source Code <i class="fa-brands fa-github"></i>]</a>
+            </div>
+            <div *ngIf="project.seniorRating">
+                <span class="rating">[Senior's Rating: {{project.seniorRating}}]</span>
+            </div>
             <!-- <hr> -->
             <p class="card-text">
                 <!-- show first 150 characters only and give a see more link -->
                 <!-- {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span> -->
                  {{project.description}}
             </p>
-            <p>
-                <i class="tech-stack">Tech Stack:  {{project.techStack}}</i><br>
-                <i *ngIf="project.gitRepo" class="source-code">Source Code: <a [href]="project.gitRepo" class="source-code-link">{{project.gitRepo}}</a></i><br>
-            </p>
-            <!-- <a href="#" class="btn btn-sm btn-primary bg-white text-black">See In Detail</a> -->
+
+            <div class="tech-container">
+                <span class="tech" *ngFor="let tech of project.techStack">{{tech}}</span>
+            </div>
         </div>
     </div>
 </div>

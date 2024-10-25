@@ -46,14 +46,6 @@ export class DummyDataService {
         category:["favourites"],
         keyWords:["Java 8"],
       },
-
-      {
-        title:"RDBMS",
-        expertise:"Intermediate",
-        description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
-        category:["Favourites"],
-        keyWords:["SQL"],
-      },
       {
         title:"Spring Boot",
         expertise:"Basic",
@@ -68,6 +60,14 @@ export class DummyDataService {
         category:["favourites"],
         keyWords:["CRUD", "Paging", "Sorting"],
       },
+      {
+        title:"RDBMS",
+        expertise:"Intermediate",
+        description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
+        category:["Favourites"],
+        keyWords:["SQL"],
+      },
+      
       {
         title:"Unit Testing",
         expertise:"Basic",
@@ -217,7 +217,7 @@ export class DummyDataService {
         techStack:["Maven","Spring Boot","JPA","MySQL", "Spring Security"],
         gitRepo:null,
         liveUrl:null,
-        "description":"I developed a Notes Management System that allows users to securely store and manage their personal notes. Upon logging in, users can access their 10 most recent notes, while older notes are automatically deleted every hour. This feature was implemented as a learning exercise to explore task scheduling. The application supports full CRUD functionality, allowing users to create, view, and delete notes. Input validation ensures that notes include only specific special characters [@, ; & * + -] and are limited to 500 characters. The system is designed with a clean, intuitive interface for a seamless user experience.",
+        "description":"The Notes Management System allows users to securely store and manage their personal notes. Upon logging in, users can access their 10 most recent notes, while older notes are automatically deleted every hour. This feature was implemented as a learning exercise to explore task scheduling. The application supports full CRUD functionality, allowing users to create, view, and delete notes. Input validation ensures that notes include only specific special characters [@, ; & * + -] and are limited to 500 characters. The system is designed with a clean, intuitive interface for a seamless user experience.",
         seniorRating:"4/5"
       },
 
@@ -260,7 +260,7 @@ export class DummyDataService {
         techStack:["Maven", "Spring Boot", "Spring Cloud", "JPA","H2 in-memory database"],
         gitRepo:null,
         liveUrl:null,
-        description:"I designed and implemented a microservices-based system using Spring Boot to explore microservices architecture. The project features two services: Customer Management and Account Management. The Customer Management service handles customer data, including adding, retrieving, updating, and deleting customers, with the added functionality that deleting a customer also removes their associated account. The Account Management service manages account operations such as deposit, withdrawal, retrieving account details, and deleting accounts, with validation of customer details for transactions. The system utilizes Eureka Server for service discovery, an API Gateway, and a Config Server for centralized configuration. This project helped me learn designing microservices systems.",
+        description:"Designed and implemented a microservices-based system using Spring Boot to explore microservices architecture. The project features two services: Customer Management and Account Management. The Customer Management service handles customer data, including adding, retrieving, updating, and deleting customers, with the added functionality that deleting a customer also removes their associated account. The Account Management service manages account operations such as deposit, withdrawal, retrieving account details, and deleting accounts, with validation of customer details for transactions. The system utilizes Eureka Server for service discovery, an API Gateway, and a Config Server for centralized configuration. This project helped me learn designing microservices systems.",
         seniorRating:"4/5"
       },
 
@@ -269,7 +269,7 @@ export class DummyDataService {
         techStack:["React Native","SQLite","Android Studio"],
         gitRepo:null,
         liveUrl:null,
-        "description":"I developed a Contacts Management App for Android using React Native, providing users with a seamless way to store, view, and manage their contacts. The app features an intuitive interface where users can easily add new contacts, edit existing ones, and delete those they no longer need. Contacts are securely saved in a local SQLite database, ensuring data persistence even when the app is closed. The app also includes a search feature, allowing users to quickly find specific contacts. Additionally, there is a dedicated screen for favorite contacts, enabling users to access their most important contacts with ease.",
+        "description":"Developed a Contacts Management App for Android using React Native, providing users with a seamless way to store, view, and manage their contacts. The app features an intuitive interface where users can easily add new contacts, edit existing ones, and delete those they no longer need. Contacts are securely saved in a local SQLite database, ensuring data persistence even when the app is closed. The app also includes a search feature, allowing users to quickly find specific contacts. Additionally, there is a dedicated screen for favorite contacts, enabling users to access their most important contacts with ease.",
         seniorRating:"3/5"
       },
 
@@ -278,7 +278,7 @@ export class DummyDataService {
         techStack:["HTML5", "CSS3", "JavaScript"],
         gitRepo:"https://github.com/BhardwajNkl/task-manager",
         liveUrl:null,
-        description:"I developed a dynamic Todo Management application utilizing HTML5, CSS3, and JavaScript. The app features an 'Add Task' button that opens a form for users to input task details. Leveraging the drag-and-drop API, users can seamlessly move tasks between different states like 'To-Do', 'Doing' and 'Done'. The app is fully responsive, adapting to all screen sizes to ensure an optimal user experience.",
+        description:"Developed a dynamic Todo Management application utilizing HTML5, CSS3, and JavaScript. The app features an 'Add Task' button that opens a form for users to input task details. Leveraging the drag-and-drop API, users can seamlessly move tasks between different states like 'To-Do', 'Doing' and 'Done'. The app is fully responsive, adapting to all screen sizes to ensure an optimal user experience.",
         seniorRating:"4/5"
       },
       {
