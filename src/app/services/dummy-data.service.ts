@@ -32,118 +32,118 @@ export class DummyDataService {
   getSkills():Skill[]{
     const skills = [
       // favourites
-      {
-        title:"HTML CSS & JS",
-        expertise:"Intermediate",
-        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
-        category:["favourites"],
-        keyWords:["Responsive Websites", "ES6","Asynchronous JS", "DOM", "JS APIs"],
-      },
-      {
-        title:"Java",
-        expertise:"Interediate",
-        description:"Proficient in Java with extensive hands-on experience. Skilled in object-oriented programming, collections, exception handling, and multithreading.",
-        category:["favourites"],
-        keyWords:["Java 8"],
-      },
-      {
-        title:"Spring Boot",
-        expertise:"Basic",
-        description:"Proficient in developing backend solutions using Spring Boot. Skilled in building RESTful APIs, creating data access layer and securing the application using Spring Security.",
-        category:["favourites"],
-        keyWords:["JPA", "Security", "Unit tests", "Bean validation" ,"Exception handling", "AOP"],
-      },
-      {
-        title:"JPA/Hibernate",
-        expertise:"Basic",
-        description:"Proficient in using JPA with Hibernate for ORM. Skilled in domain modelling, converting the model into JPA entities and mappings. I can utilize JPA's finder methods as well as write my own efficient queries.",
-        category:["favourites"],
-        keyWords:["CRUD", "Paging", "Sorting"],
-      },
-      {
-        title:"RDBMS",
-        expertise:"Intermediate",
-        description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
-        category:["Favourites"],
-        keyWords:["SQL"],
-      },
+      // {
+      //   title:"HTML CSS & JS",
+      //   expertise:"Intermediate",
+      //   description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+      //   category:["favourites"],
+      //   keyWords:["Responsive Websites", "ES6","Asynchronous JS", "DOM", "JS APIs"],
+      // },
+      // {
+      //   title:"Java",
+      //   expertise:"Interediate",
+      //   description:"Proficient in Java with extensive hands-on experience. Skilled in object-oriented programming, collections, exception handling, and multithreading.",
+      //   category:["favourites"],
+      //   keyWords:["Java 8"],
+      // },
+      // {
+      //   title:"Spring Boot",
+      //   expertise:"Basic",
+      //   description:"Proficient in developing backend solutions using Spring Boot. Skilled in building RESTful APIs, creating data access layer and securing the application using Spring Security.",
+      //   category:["favourites"],
+      //   keyWords:["JPA", "Security", "Unit tests", "Bean validation" ,"Exception handling", "AOP"],
+      // },
+      // {
+      //   title:"JPA/Hibernate",
+      //   expertise:"Basic",
+      //   description:"Proficient in using JPA with Hibernate for ORM. Skilled in domain modelling, converting the model into JPA entities and mappings. I can utilize JPA's finder methods as well as write my own efficient queries.",
+      //   category:["favourites"],
+      //   keyWords:["CRUD", "Paging", "Sorting"],
+      // },
+      // {
+      //   title:"RDBMS",
+      //   expertise:"Intermediate",
+      //   description:"Good at designing and working with MySQL databases. Skilled in writing queries and optimizing database performance.",
+      //   category:["Favourites"],
+      //   keyWords:["SQL"],
+      // },
       
-      {
-        title:"Unit Testing",
-        expertise:"Basic",
-        description:"Skilled in writing unit and integration tests using JUnit5, Mockito and MockMVC. With finely written tests, I ensure code quality and reliability.",
-        category:["favourites"],
-        keyWords:[],
-      },
-      {
-        title:"Angular",
-        expertise:"Basic",
-        description:"Angular is my favourite frontend framework. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
-        category:["favourites"],
-        keyWords:["Form Validaion", "Interceptor","Guard"],
-      },
+      // {
+      //   title:"Unit Testing",
+      //   expertise:"Basic",
+      //   description:"Skilled in writing unit and integration tests using JUnit5, Mockito and MockMVC. With finely written tests, I ensure code quality and reliability.",
+      //   category:["favourites"],
+      //   keyWords:[],
+      // },
+      // {
+      //   title:"Angular",
+      //   expertise:"Basic",
+      //   description:"Angular is my favourite frontend framework. Skilled in building components, services, and integrating RESTful APIs to create efficient frontend applications.",
+      //   category:["favourites"],
+      //   keyWords:["Form Validaion", "Interceptor","Guard"],
+      // },
 
-      {
-        title:"Git",
-        expertise:"Intermediate",
-        description:"Hands-on practice. Experienced with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
-        category:["Favourites"],
-        keyWords:[],
-      },
-      {
-        title:"Jenkins",
-        expertise:"Basic",
-        description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc. Can build pipelines for smooth CI/CD.",
-        category:["Favourites"],
-        keyWords:[],
-      },
+      // {
+      //   title:"Git",
+      //   expertise:"Intermediate",
+      //   description:"Hands-on practice. Experienced with repository initialization, remote repository setup, branching, push, pull, merge, merge conflict handling and collaboration.",
+      //   category:["Favourites"],
+      //   keyWords:[],
+      // },
+      // {
+      //   title:"Jenkins",
+      //   expertise:"Basic",
+      //   description:"Familiar with job creation, build scheduling, scripting, SCM setup, etc. Can build pipelines for smooth CI/CD.",
+      //   category:["Favourites"],
+      //   keyWords:[],
+      // },
 
-      {
-        title:"Docker and Kubernates",
-        expertise:"Basic",
-        description:"Hands-on learning through a couple of projects. Can write dockerfile, docker-compose file, build images and deploy applications on Kubernetes clusters.",
-        category:["Favourites"],
-        keyWords:[]
-      },
+      // {
+      //   title:"Docker and Kubernates",
+      //   expertise:"Basic",
+      //   description:"Hands-on learning through a couple of projects. Can write dockerfile, docker-compose file, build images and deploy applications on Kubernetes clusters.",
+      //   category:["Favourites"],
+      //   keyWords:[]
+      // },
 
       // other
-      {
-        title:"React",
-        expertise:"Basic",
-        description:"Hands on learning experience. Experienced with components, routing, props, hooks, context API and Redux.",
-        category:["other"],
-        keyWords:[],
-      },
-      {
-        title:"Express JS",
-        expertise:"Basic",
-        description:"I have done a couple of learning projects. Experienced with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
-        category:["other"],
-        keyWords:[],
-      },
-      {
-        title:"React Native",
-        expertise:"Basic",
-        description:"Basic familiarity. Gained hands on experience by working on a couple of android app development projects.",
-        category:["other"],
-        keyWords:[],
-      },
+      // {
+      //   title:"React",
+      //   expertise:"Basic",
+      //   description:"Hands on learning experience. Experienced with components, routing, props, hooks, context API and Redux.",
+      //   category:["other"],
+      //   keyWords:[],
+      // },
+      // {
+      //   title:"Express JS",
+      //   expertise:"Basic",
+      //   description:"I have done a couple of learning projects. Experienced with routing, authentication, authorization, REST APIs, EJS and Sequelize ORM.",
+      //   category:["other"],
+      //   keyWords:[],
+      // },
+      // {
+      //   title:"React Native",
+      //   expertise:"Basic",
+      //   description:"Basic familiarity. Gained hands on experience by working on a couple of android app development projects.",
+      //   category:["other"],
+      //   keyWords:[],
+      // },
 
-      {
-        title:"AWS",
-        expertise:"Basic",
-        description:"Familiar with EC2, S3, RDS, Lambda, Security groups, VPC, subnets and NACLs. Can deploy applications on EC2 or Elastic Beanstalk.",
-        category:["other"],
-        keyWords:[],
-      },
+      // {
+      //   title:"AWS",
+      //   expertise:"Basic",
+      //   description:"Familiar with EC2, S3, RDS, Lambda, Security groups, VPC, subnets and NACLs. Can deploy applications on EC2 or Elastic Beanstalk.",
+      //   category:["other"],
+      //   keyWords:[],
+      // },
       
-       {
-        title:"Design Patterns",
-        expertise:"Basic",
-        description:"Familiar with commonly used design patterns. Can identify use cases and apply the patterns effectively.",
-        category:["other"],
-        keyWords:[]
-      },
+      //  {
+      //   title:"Design Patterns",
+      //   expertise:"Basic",
+      //   description:"Familiar with commonly used design patterns. Can identify use cases and apply the patterns effectively.",
+      //   category:["other"],
+      //   keyWords:[]
+      // },
       
       // {
       //   title:"Microservices",
@@ -173,6 +173,49 @@ export class DummyDataService {
       //   category:["other"],
       //   associatedProjects:["project1"]
       // }
+
+      {
+        title:"Java Development",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["Java", "Spring Boot","JPA/Hibernate", "Jnuit & Mockito", "Maven"],
+      },
+      {
+        title:"JavaScript Development",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["JavaScript", "Node JS", "Express", "Nest JS"],
+      },
+      {
+        title:"Database and ORM",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["MySQL", "Redis", "Hibernate", "Sequelize"],
+      },
+      {
+        title:"DevOps",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["Linux", "Git","Jenkins", "Docker", "Kubernetes", "AWS"],
+      },
+      {
+        title:"Frontend",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["HTML & CSS","JavaScript", "Angular", "Bootstrap", "React Native"],
+      },
+      {
+        title:"Other Skills",
+        expertise:"Intermediate",
+        description:"Proficient in creating responsive and interactive websites using HTML, CSS, and JavaScript. Able to create decent design using CSS. Strong Foundation in JavaScript.",
+        category:["favourites"],
+        keyWords:["Microservices architecture", "Design Patterns", "Redis", "RabbitMQ", "Camunda"],
+      },
 
     ]
     return skills;

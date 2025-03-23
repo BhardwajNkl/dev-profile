@@ -1,23 +1,26 @@
-<div id="skill-filter-container">
+<!-- <div id="skill-filter-container">
     <span [class.skill-filter]="activeFilter!=skillFilter.filter" [class.active]="activeFilter==skillFilter.filter" *ngFor="let skillFilter of skillFilters" (click)="filterSkills(skillFilter.filter)" >
     {{skillFilter.filter}}
     </span>
-</div>
+</div> -->
+<h5 id="top-header">Technical Skills</h5>
 <div id="skills" class="mt-2">
     <div class="card skill" *ngFor="let skill of skillToDisplay">
-        <div class="card-body">
-            <h5 class="card-title">{{skill.title}}</h5>
-            <i class="skill-expertise">Level: {{skill.expertise}}</i><br>
-            <span class="card-text">
+        <h5 class="card-title">{{skill.title}}</h5>
+        <div class="keyword-container">
+            <!-- <i class="skill-expertise">Level: {{skill.expertise}}</i><br> -->
+            <!-- <span class="card-text"> -->
                 <!-- show first 150 characters only and give a see more link -->
-                {{skill.description}}
-            </span>
+                <!-- {{skill.description}} -->
+            <!-- </span> -->
             <!-- key words -->
-             <div class="keyword-container">
+             <!-- <div class="keyword-container">
 
-                 <span class="keyword" *ngFor="let key of skill.keyWords">{{key}}</span>
                  
-             </div>
+                 
+             </div> -->
+
+             <span class="keyword" *ngFor="let key of skill.keyWords">{{key}}</span>
         </div>
     </div>
 </div>
