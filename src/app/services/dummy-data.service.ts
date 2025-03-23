@@ -12,10 +12,10 @@ export class DummyDataService {
   getUser():User{
     const user = {
       "name":"Nikhil Bhardwaj",
-      "profession":"Fullstack Developer | 1 Year",
+      "profession":"Software Developer | 2 Year",
       "tagline":"I think & I code. Then I keep looking at the code until it becomes perfect.",
-      "introduction":["A solution-driven developer with a strong foundation in Java, JavaScript and SQL languages. Skilled in backend development with Spring Boot, and creating intuitive frontend interfaces using Angular.", 
-        "Adept at problem-solving and proficient in working with relational databases. A collaborative team player with the ability to quickly adapt to new challenges and technologies, always eager to learn and contribute effectively.",
+      "introduction":["I specialize in building efficient, scalable and secure backend solutions with Java, JavaScript and various programming tools and technologies.",
+      "Please check my skills and projects. Let's connect!"
       ],
       "mobile":"8888888888",
       "city":"Noida"
@@ -32,7 +32,7 @@ export class DummyDataService {
       },
       {
         title:"JavaScript Development",
-        keyWords:["JavaScript", "Node JS", "Express", "Nest JS"],
+        keyWords:["JavaScript", "TypeScript", "Node JS", "Express JS", "Nest JS"],
       },
       {
         title:"Database and ORM",
@@ -44,11 +44,11 @@ export class DummyDataService {
       },
       {
         title:"Frontend",
-        keyWords:["HTML & CSS","JavaScript", "Angular", "Bootstrap", "React Native"],
+        keyWords:["HTML & CSS", "JavaScript", "Angular", "Bootstrap", "React Native"],
       },
       {
         title:"Other Skills",
-        keyWords:["Microservices architecture", "Design Patterns", "Redis", "RabbitMQ", "Camunda"],
+        keyWords:["Redis", "RabbitMQ", "Camunda"],
       },
 
     ]
@@ -72,17 +72,17 @@ export class DummyDataService {
         imageName:"food_order.jpg"
       },
       {
-        title:"Result Management",
+        title:"Result Management System",
         // gitRepo:"https://github.com/BhardwajNkl/node-JS-result-management",
         // liveUrl:null,
-        description:"A web application for managing student results. Teachers can add, update, and delete results, while students can securely view their own. Implemented authentication and role-based access control for secure user management.",
+        description:"An Express JS based web application for managing student results. Teachers can add, update, and delete results, while students can securely view their own. Implemented authentication and role-based access control for secure user management.",
         imageName:"result.jpg"
       },
       {
         title:"Contacts App for Android",
         // gitRepo:null,
         // liveUrl:null,
-        description:"Built an android app for managing contacts with an intuitive UI. Users can add, edit, delete, and search contacts, with data securely stored in an SQLite database. Features include a favorites section for quick access.",
+        description:"Built an android app using React Native for managing contacts. Users can add, edit, delete, and search contacts, with data securely stored in an SQLite database. Features include a favorites section for quick access.",
         imageName:"contacts.jpg"
       },
       {
