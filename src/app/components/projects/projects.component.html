@@ -1,32 +1,13 @@
-<!-- <div id="project-count">
-    Project Count: {{projects.length}}
-</div> -->
+<h5 id="project-section-header">Featured Projects</h5>
 <div id="projects">
     <div class="card project" *ngFor="let project of projects">
-        <!-- <img src="" class="card-img-top" alt="project-image"> -->
+        <!-- Currently, not showing GitHub URL or Live URL. -->
+        <img [src]="'assets/'+project.imageName" class="project-img" alt="project-image">
         <div class="card-body">
-            <h5 class="card-title">
-                {{project.title}}
-            </h5>
-            <div *ngIf="project.liveUrl">
-                <i class="live-url"><a [href]="project.liveUrl" class="live-link">{{project.liveUrl}}</a></i>
-            </div>
-            <div *ngIf="project.gitRepo">
-                <a class="source-code-link" [href]="project.gitRepo" target="_blank">[Source Code <i class="fa-brands fa-github"></i>]</a>
-            </div>
-            <div *ngIf="project.seniorRating">
-                <span class="rating">[Senior's Rating: {{project.seniorRating}}]</span>
-            </div>
-            <!-- <hr> -->
+            <h5 class="card-title"> {{project.title}} </h5>
             <p class="card-text">
-                <!-- show first 150 characters only and give a see more link -->
-                <!-- {{project.description.substring(0,220)}} <span *ngIf="project.description.length>220" >...</span> -->
                  {{project.description}}
             </p>
-
-            <div class="tech-container">
-                <span class="tech" *ngFor="let tech of project.techStack">{{tech}}</span>
-            </div>
         </div>
     </div>
 </div>
