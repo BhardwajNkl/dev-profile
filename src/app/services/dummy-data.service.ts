@@ -12,10 +12,12 @@ export class DummyDataService {
   getUser():User{
     const user = {
       "name":"Nikhil Bhardwaj",
-      "profession":"Software Developer | 2 Year",
+      "profession":"Backend Developer | 2.5 Year",
       "tagline":"I think & I code. Then I keep looking at the code until it becomes perfect.",
-      "introduction":["I specialize in building efficient, scalable and secure backend solutions with Java, JavaScript and various programming tools and technologies.",
-      "Please check my skills and projects. Let's connect!"
+      // "introduction":["I specialize in building efficient, scalable and secure backend solutions with Java, JavaScript and various programming tools and technologies.",
+      "introduction":["A backend developer who enjoys thinking deeply about data modelling, low-level design using object oriented methodology and design patterns that make systems clean and reliable.",
+        "I work mostly with JavaScript and Java, building APIs and systems with care from the ground up.",
+        "Let's connect!"
       ],
       "mobile":"8888888888",
       "city":"Noida"
@@ -27,28 +29,24 @@ export class DummyDataService {
   getSkills():Skill[]{
     const skills = [
       {
-        title:"Java Development",
-        keyWords:["Java", "Spring Boot","JPA/Hibernate", "Jnuit & Mockito", "Maven"],
+        title:"Java & Spring",
+        keyWords:["Java", "Spring Boot","JPA", "Jnuit & Mockito"],
       },
       {
-        title:"JavaScript Development",
-        keyWords:["JavaScript", "TypeScript", "Node JS", "Express JS", "Nest JS"],
+        title:"JavaScript & Node JS",
+        keyWords:["JavaScript", "TypeScript", "Express JS", "Nest JS"],
       },
       {
-        title:"Database and ORM",
-        keyWords:["MySQL", "Redis", "Hibernate", "Sequelize"],
+        title:"Database & ORM",
+        keyWords:["MySQL", "MongDB", "Sequelize",  "TypeORM"],
       },
       {
-        title:"DevOps",
-        keyWords:["Linux", "Git","Jenkins", "Docker", "Kubernetes", "AWS"],
-      },
-      {
-        title:"Frontend",
-        keyWords:["HTML & CSS", "JavaScript", "Angular", "Bootstrap", "React Native"],
+        title:"Developer tools & platforms familiarity",
+        keyWords:["Git", "Jenkins", "Docker", "Kubernetes", "Openshift", "Jira"],
       },
       {
         title:"Other Skills",
-        keyWords:["Redis", "RabbitMQ", "Camunda"],
+        keyWords:["Redis", "RabbitMQ", "Camunda", "Angular"],
       },
 
     ]
@@ -92,48 +90,7 @@ export class DummyDataService {
         description:"Built a backend using NestJS for task management. Implemented MySQL for data storage, API caching with Redis, and logging for monitoring. Used RabbitMQ to publish messages on task creation, update, and deletion. Managed application processes with PM2 for reliability.",
         imageName:"task_manager.png"
       },
-
-      // {
-      //   title:"Notes Management",
-      //   techStack:["Maven","Spring Boot","JPA","MySQL", "Spring Security"],
-      //   gitRepo:null,
-      //   liveUrl:null,
-      //   "description":"The Notes Management System allows users to securely store and manage their personal notes. Upon logging in, users can access their 10 most recent notes, while older notes are automatically deleted every hour. This feature was implemented as a learning exercise to explore task scheduling. The application supports full CRUD functionality, allowing users to create, view, and delete notes. Input validation ensures that notes include only specific special characters [@, ; & * + -] and are limited to 500 characters. The system is designed with a clean, intuitive interface for a seamless user experience.",
-      //   seniorRating:"4/5"
-      // },
-
-      // {
-      //   title:"Blog App",
-      //   techStack:["React","Redux","Bootstrap","CSS","NPM"],
-      //   gitRepo:"https://github.com/BhardwajNkl/react-blog-app",
-      //   liveUrl:null,
-      //   // "description":"The app allows a user to create, update, delete and like notes. Utilized Redux for state management. The app uses browser's local storage for persistence."
-      //   description:"In this project, I developed a simple blogging application using React.js. The app allows users to create, view, update, and delete posts, with all data stored locally in the browser's localStorage. Key features include the ability to click on a post to view its detailed content, edit the post, and delete it if needed. This project helped me deepen my understanding of React components, state management, and localStorage.",
-      //   seniorRating:"4.2/5"
-      // },
-      // {
-      //   title:"BConnect",
-      //   techStack:["Node JS","Express JS", "EJS", "Socket.io","CSS"],
-      //   gitRepo:null,
-      //   liveUrl:null,
-      //   "description":"An end-to-end encryption-based chat app. Users can find one another using their BConnect numbers. They can save contacts. Users can talk to online users only. There is no persistence of messages."
-      // },
-
-      // {
-      //   title:"BTube",
-      //   techStack:["Angular","Bootstrap","CSS"],
-      //   gitRepo:null,
-      //   liveUrl:null,
-      //   "description":"Created a frontend application that will work as a video library. The application uses YouTube's API for searching and playing videos. This application helps in avoiding distractions faced on YouTube."
-      // },
-      // {
-      //   title:"Microservices Project",
-      //   techStack:["Maven", "Spring Boot", "Spring Cloud", "JPA","H2 in-memory database"],
-      //   gitRepo:null,
-      //   liveUrl:null,
-      //   description:"Designed and implemented a microservices-based system using Spring Boot to explore microservices architecture. The project features two services: Customer Management and Account Management. The Customer Management service handles customer data, including adding, retrieving, updating, and deleting customers, with the added functionality that deleting a customer also removes their associated account. The Account Management service manages account operations such as deposit, withdrawal, retrieving account details, and deleting accounts, with validation of customer details for transactions. The system utilizes Eureka Server for service discovery, an API Gateway, and a Config Server for centralized configuration. This project helped me learn designing microservices systems.",
-      //   seniorRating:"4/5"
-      // },
+      
       // {
       //   title:"ANPR system",
       //   techStack:["Python","YOLOv8"],
